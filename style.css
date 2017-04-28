@@ -1,0 +1,33 @@
+body {
+	font-size: 62.5%;
+	font-family: sans-serif;
+	background: #696969;
+}
+
+.clear { clear: both; }
+
+#header {
+	background: #2F4F4F;
+        color: #C71585;
+}
+
+img {
+        display: block;
+        max-width: 65%;
+        margin: auto;
+}
+
+#content {
+	max-width: 58%;
+        background: #2F4F4F;
+        float: right;
+        color: #C71585;
+}
+
+#sidebar {
+	width: 40%;
+        max-width: 40%;
+	float: left;
+        background: #708090;
+        color: #800000;
+}
