@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sun, 14 May 2017 04:13:27 -0400
+Source: scpage
+Binary: scpage
+Architecture: source all
+Version: 1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: idk <eyedeekay@i2pmail.org>
+Changed-By: idk <idk@fireaxe.local>
+Description:
+ scpage     - Generates a Markdown-formatted description of a software package
+Changes:
+ scpage (1.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ ac615dbe0a40212d1e3d049714fc3ef08b9e5116 866 scpage_1.0-1.dsc
+ 9ed421612260b6ea012ed8593ef7a878f46d7ffb 44374 scpage_1.0.orig.tar.gz
+ acd99a366b5c90ba37047ec654745be1ded9d246 2648 scpage_1.0-1.debian.tar.xz
+ 2c82e389cde92a2ebeb914e422ec3b79a90221f5 4852 scpage_1.0-1_all.deb
+ 012886a35fec17b2b897669b8fef7cca1440492f 4976 scpage_1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ 562659c93e8ed6d27206770b3954b37a916f6e8248e17e8cfb9171f15f75f421 866 scpage_1.0-1.dsc
+ cf591bd51c332fda5c763505ccccdc9649b38417a429f7e1ff68051097818228 44374 scpage_1.0.orig.tar.gz
+ cb55dcd5068021d73556461c52253706526ffbb93983c91953dd5496e9de933b 2648 scpage_1.0-1.debian.tar.xz
+ c3881a34b30500683c5e050f0a307f7fff5cd5a81cacd10bd0e9e7d8eae944e5 4852 scpage_1.0-1_all.deb
+ 27f5fa3d52ec50d2d801451ecd14d8b08b21ccc04d71f69f7de62d867800f32b 4976 scpage_1.0-1_amd64.buildinfo
+Files:
+ 3e3b079c0d7b7d76e08ced83358384e7 866 admin optional scpage_1.0-1.dsc
+ d6da5a317ecd86279701e1cd9eb8857a 44374 admin optional scpage_1.0.orig.tar.gz
+ d3127e84f77861e8f29c3ab69cff2e64 2648 admin optional scpage_1.0-1.debian.tar.xz
+ a31e20c535b4a4b83ad7d5ebe3166a4c 4852 admin optional scpage_1.0-1_all.deb
+ a9370c9659e8da1c9e9a2c3d8d9571db 4976 admin optional scpage_1.0-1_amd64.buildinfo

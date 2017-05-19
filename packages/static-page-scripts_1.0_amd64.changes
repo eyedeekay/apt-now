@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 19 May 2017 06:32:56 -0400
+Source: static-page-scripts
+Binary: static-page-scripts
+Architecture: source all
+Version: 1.0
+Distribution: unstable
+Urgency: low
+Maintainer: lair repo key <problemsolver@openmailbox.org>
+Changed-By: lair repo key <problemsolver@openmailbox.org>
+Description:
+ static-page-scripts - shell scripts to generate static pages
+Changes:
+ static-page-scripts (1.0) unstable; urgency=low
+ .
+   * First version
+Checksums-Sha1:
+ 97e32dc1b8ee2e945a6f2ce132934e410336ada4 1146 static-page-scripts_1.0.dsc
+ 2fbf6ada67445352ce1d767e1de1fad3a32d5a2a 1910 static-page-scripts_1.0.tar.gz
+ e5e8cc95a5014c10c48b87e22242e9c366379bae 2166 static-page-scripts_1.0_all.deb
+ 8b6e94005b8edc649517215d72b36790801ef611 5662 static-page-scripts_1.0_amd64.buildinfo
+Checksums-Sha256:
+ 820a1e433ec2c28aaf6e6ac61b880261690d83f3d761af79c8028165ad16e302 1146 static-page-scripts_1.0.dsc
+ ff064ba2c688fb09cc0bfd5983b078e42bab3d484bd745e74f93ecaee7a9f792 1910 static-page-scripts_1.0.tar.gz
+ 6546a512f5a4a3319981c40618bfcd7a00be5a2f33e2ecb7f8d5408a927f7d10 2166 static-page-scripts_1.0_all.deb
+ 02a9ba319332073c3cb817cf136c11421b73225b1fb40331f85bf873ffdc78fa 5662 static-page-scripts_1.0_amd64.buildinfo
+Files:
+ 32fd2463e16e2aed6bbc5746993019b1 1146 misc optional static-page-scripts_1.0.dsc
+ 0912c04ccc8aa6818e6e774ef8efefb0 1910 misc optional static-page-scripts_1.0.tar.gz
+ 2c4afde0aa4bc51eecc3384f90786847 2166 misc optional static-page-scripts_1.0_all.deb
+ e2c261a3776e20a751f54a9effe3c5bc 5662 misc optional static-page-scripts_1.0_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAlkeyd0eHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrLcQH/iUIphC8d9VYelcM
+FYzsukq1d2DjgLOKv8DXdVje3G0V5AK1t0E730l/CP2elAoQoXRgpMcIV5DWoddo
+cNynrp5+C+3jRZOvRVF6trZfQ58N8FmE0cD/7QAze0KmGewhVBGC6+49HYvs326w
+JKOy4ATaJwWQWdJ5h7rGj5M5hDWQSf9g3o37/cjgdoUcGqWH5Jiwk/kfdbwb7Rq9
+GGLo6uOQPhSmzn7KhIZleEEmkK/9VrJkP8EbNA0xzTWUHPap5XY+qsf7u1mQn7ig
+oL2ZnmxmKrjlm9bn/IAQmZ/tU1W8EKO6Y/tzfFxTZJctYmWyi3qVCZrkigckI/F6
+ScnJdFo=
+=CGnD
+-----END PGP SIGNATURE-----

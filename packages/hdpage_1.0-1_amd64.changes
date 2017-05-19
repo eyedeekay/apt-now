@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 19 May 2017 05:43:52 -0400
+Source: hdpage
+Binary: hdpage
+Architecture: source all
+Version: 1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: idk <idk@fireaxe.local>
+Changed-By: idk <idk@fireaxe.local>
+Description:
+ hdpage     - <insert up to 60 chars description>
+Changes:
+ hdpage (1.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ c5d798d59094f2d719304192eb9cf6a9060d1286 785 hdpage_1.0-1.dsc
+ 91dde5f7662b7b2758d76a846d4f9c761e535314 49297 hdpage_1.0.orig.tar.gz
+ 00cca10c5621ce4a1f480997c2b9a552f8f31752 2256 hdpage_1.0-1.debian.tar.xz
+ 37cfd2b447d2702b96bbd92d7ad29f01f4112ce0 15260 hdpage_1.0-1_all.deb
+ 3a901058ebbb7e99fa4e3e2ce98b068537e7ad3a 4979 hdpage_1.0-1_amd64.buildinfo
+Checksums-Sha256:
+ cfd4ede7a3f7cc69e8b9cfd77770c2b0d0da61916748af8f4e7992dd5d7dc301 785 hdpage_1.0-1.dsc
+ 5f837ab4b090c295a2802864cae7cb3b791b351507eb9b34ce2f83f42cf6ff6e 49297 hdpage_1.0.orig.tar.gz
+ 7b7325b46ab79020fabe4147c49d2724cdd7545f2e079ce80d573066e1abf45d 2256 hdpage_1.0-1.debian.tar.xz
+ 41b07aeaf5b2298a3f7f865b9c7a2fd2c0cefcacd68eb97d67e38b0713ddb8c9 15260 hdpage_1.0-1_all.deb
+ 388dd9b98bdc385c4d1741efdc25e4c5186735ab2d7311027f12bcca43474ee8 4979 hdpage_1.0-1_amd64.buildinfo
+Files:
+ d363d3baf3cfc34043bfb5635d197417 785 unknown optional hdpage_1.0-1.dsc
+ 11f3f75e21f586af58e66e9f6f93b588 49297 unknown optional hdpage_1.0.orig.tar.gz
+ a4c9f741c00ef9f4a1e05f6129389bc3 2256 unknown optional hdpage_1.0-1.debian.tar.xz
+ 3a50266bc292aa0cfb82deb043b33790 15260 unknown optional hdpage_1.0-1_all.deb
+ 9b742a1271f428ffbc79501854a5c92a 4979 unknown optional hdpage_1.0-1_amd64.buildinfo

@@ -111,7 +111,7 @@ while [ "$#" -gt 0 ]; do
 	esac
 	shift
 done
-KEYNAME=$(echo $ORIGIN | tr "/" ".")
+KEYNAME=$(echo "$ORIGIN" | tr "/" ".")
 HELP="
 apt-now personal repository tool\n
 ================================\n
@@ -173,7 +173,7 @@ CONFDIR="$CURDIR/debian/conf"
 if [ ! -d "$BASEDIR" ]; then
         mkdir -p "$CONFDIR"
 else
-        \rm -rf "$BASEDIR"
+        rm -rf "$BASEDIR"
         mkdir -p "$CONFDIR"
 fi
 
@@ -181,7 +181,7 @@ INFODIR="$CURDIR/info"
 if [ ! -d "$INFODIR" ]; then
         mkdir -p "$INFODIR"
 else
-        \rm -rf "$INFODIR"
+        rm -rf "$INFODIR"
         mkdir -p "$INFODIR"
 fi
 
@@ -189,10 +189,10 @@ confirm(){
 	read -r -p "${1: -Are you sure? [y/N]} " response
 	case $response in
 		[yY][eE][sS])
-			local s="YES"
+			s="YES"
 			;;
 		*)
-			local s="NO"
+			s="NO"
 			;;
 	esac
 	echo "$s"
@@ -209,7 +209,7 @@ generatekey(){
 
 enterkey(){
 	KEYED="NO"
-	while [ "$KEYED"="NO" ]; do
+	while [ "$KEYED" = "NO" ]; do
 		read -r -p "Enter the key that you want to use to sign your repository" KEY
 		KEYED=confirm
 	done
@@ -243,29 +243,29 @@ genconfoptions(){
 }
 
 generaterkey(){
-    if [ $POSSIBLE_EXTANT_KEY != $KEYNAME.gpg.key ]; then
-        gpg --armor --output "$CURDIR/$KEYNAME.gpg.key" --export $KEY
-        \rm $POSSIBLE_EXTANT_KEY
+    if [ "$POSSIBLE_EXTANT_KEY" != "$KEYNAME.gpg.key" ]; then
+        gpg --armor --output "$CURDIR/$KEYNAME.gpg.key" --export "$KEY"
+        rm "$POSSIBLE_EXTANT_KEY"
     fi
-    if [ -f $POSSIBLE_EXTANT_KEY ]; then
-        gpg --armor --output "$CURDIR/$KEYNAME.gpg.key.tmp" --export $KEY
-        if [ ! $(diff $CURDIR/$KEYNAME.gpg.key.tmp $POSSIBLE_EXTANT_KEY) = "" ]; then
-            mv $CURDIR/$KEYNAME.gpg.key.tmp $CURDIR/$KEYNAME.gpg.key
+    if [ -f "$POSSIBLE_EXTANT_KEY" ]; then
+        gpg --armor --output "$CURDIR/$KEYNAME.gpg.key.tmp" --export "$KEY"
+        if [ ! "$(diff \"$CURDIR/$KEYNAME.gpg.key.tmp\" \"$POSSIBLE_EXTANT_KEY\")" = "" ]; then
+            mv "$CURDIR/$KEYNAME.gpg.key.tmp" "$CURDIR/$KEYNAME.gpg.key"
         elif [ ! -f "$CURDIR/$KEYNAME.gpg.key" ]; then
-            mv $CURDIR/$KEYNAME.gpg.key.tmp $CURDIR/$KEYNAME.gpg.key
+            mv "$CURDIR/$KEYNAME.gpg.key.tmp" "$CURDIR/$KEYNAME.gpg.key"
         fi
     fi
     if [ -f "$CURDIR/$KEYNAME.gpg.key" ]; then
-        \rm $CURDIR/$KEYNAME.gpg.key.tmp
+        rm "$CURDIR/$KEYNAME.gpg.key.tmp"
     fi
 }
 hdpage(){
     DOCTYPE_HEADER='<!DOCTYPE html>'
     HTML='<html>'
-    if [ -z $TITLE ]; then
+    if [ -z "$TITLE" ]; then
         TITLE='web page'
     fi
-    if [ ! -z $LANG ]; then
+    if [ ! -z "$LANG" ]; then
         HTML="<html lang=$LANG>"
     fi
 HEADER="<head>\n
@@ -276,32 +276,32 @@ HEADER="<head>\n
 </head>\n
 "
 
-    echo $DOCTYPE_HEADER
-    echo $HTML
+    echo "$DOCTYPE_HEADER"
+    echo "$HTML"
     printf "%b\n" $HEADER
 }
 includepackages(){
 	for f in $SRCDIR/*.deb ; do
-                reprepro --basedir $BASEDIR includedeb $CODENAME "$f";
-		export POSTPATH=$(echo $f | sed "s|$SRCDIR|$INFODIR|")
-                export TITLE=$(echo $f | sed "s|$SRCDIR||")
+                reprepro --basedir "$BASEDIR" includedeb "$CODENAME" "$f";
+		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
+                export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
                 export PARENT=".."
-                hdpage > $POSTPATH.html
-                pkpage-html -f $f >> $POSTPATH.html
+                hdpage > "$POSTPATH.html"
+                pkpage-html -f "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.dsc ; do
-                reprepro --basedir $BASEDIR includedsc $CODENAME "$f";
-		export POSTPATH=$(echo $f | sed "s|$SRCDIR|$INFODIR|")
-                export TITLE=$(echo $f | sed "s|$SRCDIR||")
-                hdpage > $POSTPATH.html
-                scpage-html -f $f >> $POSTPATH.html
+                reprepro --basedir "$BASEDIR" includedsc "$CODENAME" "$f";
+		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
+                export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
+                hdpage > "$POSTPATH.html"
+                scpage-html -f "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.changes ; do
-                reprepro --ignore=wrongdistribution --basedir $BASEDIR include $CODENAME "$f";
-		export POSTPATH=$(echo $f | sed "s|$SRCDIR|$INFODIR|")
-                export TITLE=$(echo $f | sed "s|$SRCDIR||")
-#                hdpage > $POSTPATH.html
-#                pkpage-html -f $f >> $POSTPATH.html
+                reprepro --ignore=wrongdistribution --basedir "$BASEDIR" include "$CODENAME" "$f";
+		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
+                export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
+#                hdpage > "$POSTPATH.html"
+#                pkpage-html -f "$f" >> "$POSTPATH.html"
         done
 }
 constructindex(){
@@ -318,7 +318,7 @@ $CODENAME\n
 ####Latest update: $DATE\n
 \n\n</div>\n\n
 "
-        TRIMMED_REPODESC=$(echo $REPODESC | tr "\n" " ")
+        TRIMMED_REPODESC=$(echo "$REPODESC" | tr "\n" " ")
         INDEX_DETAIL="\n
 ###Description:\n
 $TRIMMED_REPODESC\n
@@ -338,21 +338,21 @@ generator which emits apt repositories
 "
         hdpage | tee index.html
         printf "%b\n" "\n\n<div id=\"header\">\n\n" | tee -a index.html
-        printf "%b\n" $INDEX_HEADER | sed -e 's/^[ \t]*//' | markdown | tee -a index.html
+        printf "%b\n" "$INDEX_HEADER" | sed -e 's/^[ \t]*//' | markdown | tee -a index.html
         printf "%b\n" "\n\n</div>\n\n" | tee -a index.html
         printf "%b\n" "\n\n<div id=\"content\">\n\n" | tee -a index.html
-        printf "%b\n" $INDEX_DETAIL | sed -e 's/^[ \t]*/        /' | markdown | tee -a index.html
+        printf "%b\n" "$INDEX_DETAIL" | sed -e 's/^[ \t]*/        /' | markdown | tee -a index.html
         printf "%b\n" "$INDEX_FOOTER" | sed -e 's/^[ \t]*/        /' | markdown | tee -a index.html
         printf "%b\n" "\n\n</div>\n\n" | tee -a index.html
         printf "%b\n" "\n\n<div id=\"sidebar\">\n\n" | tee -a index.html
         printf "%b\n" "###Binary Packages:\n\n" | markdown | tee -a index.html
 	for f in $INFODIR/*.deb.html ; do
-                TRIMMED_CLEAN=$(echo $f | sed "s|$INFODIR/||")
+                TRIMMED_CLEAN=$(echo "$f" | sed "s|$INFODIR/||")
                 echo "  * [$TRIMMED_CLEAN](info/$TRIMMED_CLEAN)" | markdown | tee -a index.html
         done
         printf "%b\n" "###Source Packages:\n\n" | markdown | tee -a index.html
         for f in $INFODIR/*.dsc.html ; do
-                TRIMMED_CLEAN=$(echo $f | sed "s|$INFODIR/||")
+                TRIMMED_CLEAN=$(echo "$f" | sed "s|$INFODIR/||")
                 echo "  * [$TRIMMED_CLEAN](info/$TRIMMED_CLEAN)" | markdown | tee -a index.html
         done
         #printf "%b\n" "\n\n</div>\n\n" | tee -a index.html
@@ -363,7 +363,7 @@ generator which emits apt repositories
 }
 
 if [ "$H" = "YES" ]; then
-	echo $HELP
+	echo "$HELP"
         exit 1
 fi
 if [ "$DRY_RUN" = "NO" ]; then
@@ -397,7 +397,7 @@ if [ "$DRY_RUN" = "NO" ]; then
                         if [ ! "$SKIP_INDEX" = "YES" ]; then
                                 constructindex
                         fi
-                        cd $CURDIR
+                        cd "$CURDIR" || exit
 			if [ "$ORG" = "YES" ]; then
 				git add . && git commit -am "Repository update: $MESSAGE $DATE" && git push origin master
 			else
