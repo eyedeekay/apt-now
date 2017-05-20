@@ -4,8 +4,6 @@ SOURCEBINPATH=.
 SOURCEBIN=apt-now
 SOURCEDOC=README.md
 DEBFOLDER=apt-now
-UHTTPD=uhttpd.go
-UHTTPD_BIN=httpd-now
 DEBVERSION="0.9"
 CONTROL_FILE="Source: apt-now
 Section: admin
@@ -47,10 +45,8 @@ cd $DEBFOLDER
 mkdir $DEBFOLDERNAME
 
 # Copy your script to the source dir
-cp $SOURCEBINPATH/$SOURCEBIN $DEBFOLDERNAME/$DEBFOLDER
-cp $SOURCEBINPATH/$UHTTPD $DEBFOLDERNAME/$UHTTPD
+cp $SOURCEBINPATH/* $DEBFOLDERNAME/$DEBFOLDER
 cd $DEBFOLDERNAME
-gccgo $UHTTPD -o $UHTTPD_BIN
 
 # Create the packaging skeleton (debian/*)
 dh_make --indep --createorig
@@ -62,8 +58,15 @@ mv debian/rules.new debian/rules
 
 # debian/install must contain the list of scripts to install
 # as well as the target directory
-echo $DEBFOLDER usr/bin > debian/install
-#echo $SOURCEDOC usr/share/doc/apt-git >> debian/install
+echo $SOURCEBIN usr/bin > debian/install
+echo gpg.file usr/lib/apt-now >> debian/install
+echo gpg.file2 usr/lib/apt-now >> debian/install
+echo index.html usr/share/doc/apt-now >> debian/install
+echo style.css usr/share/doc/apt-now >> debian/install
+echo aptnow.conf.example usr/share/doc/apt-now >> debian/install
+echo $SOURCEDOC usr/share/doc/apt-now >> debian/install
+echo USAGE.md usr/share/doc/apt-now >> debian/install
+echo aptnow-4.png usr/share/doc/apt-now >> debian/install
 
 # Remove the example files
 rm debian/*.ex
