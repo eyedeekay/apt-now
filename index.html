@@ -104,34 +104,34 @@ apt-now instant package repositories
 </ul>
 <h1 id="apt-now-personal-repository-tool">apt-now personal repository tool</h1>
 <p>This tool helps developers host their own applications by posting them to github pages for download.</p>
-<pre><code>    -d \ --directory\n
-            Work in this directory, uses current directory by default\n
-    -o \ --origin\n
-            URL of the repository\n
-    -c \ --codename\n
-            Codename you want to use, defaults is \&quot;testing\&quot;\n
-    -a \ --arch\n
-            Architecture you want to host, defaults to \&quot;all\&quot;\n
-    -p \ --policy\n
-            Policy of packages you want to host, defaults to \&quot;main\&quot;\n
-    -k \ --key\n
-            ID of the package signing key\n
-    -s \ --sources\n
-            Folder with the packages to include in the repo\n
-    -q \ --override\n
-            Name of the override file\n
-    -m \ --message\n
-            Message to include in the commit\n
-    -n \ --name\n
-            Human-readable name of the Repository\n
-    -v \ --desc\n
-            Detailed repository description\n
-    -c \ --check\n
-            Make sure the dependencies are installed\n
-    -r \ --reset\n
-            Re-generate all components of the repository\n
-    -u \ --user \ --org \ --organization\n
-            Us as user/organization page, post page to master branch\n
+<pre><code>    -d \ --directory
+            Work in this directory, uses current directory by default
+    -o \ --origin
+            URL of the repository
+    -c \ --codename
+            Codename you want to use, defaults is \&quot;testing\&quot;
+    -a \ --arch
+            Architecture you want to host, defaults to \&quot;all\&quot;
+    -p \ --policy
+            Policy of packages you want to host, defaults to \&quot;main\&quot;
+    -k \ --key
+            ID of the package signing key
+    -s \ --sources
+            Folder with the packages to include in the repo
+    -q \ --override
+            Name of the override file
+    -m \ --message
+            Message to include in the commit
+    -n \ --name
+            Human-readable name of the Repository
+    -v \ --desc
+            Detailed repository description
+    -c \ --check
+            Make sure the dependencies are installed
+    -r \ --reset
+            Re-generate all components of the repository
+    -u \ --user \ --org \ --organization
+            Us as user/organization page, post page to master branch
     -l \ --serve
             Serve with a local, static httpd on port 45291(debia).
     -f \ --hide
@@ -142,10 +142,10 @@ apt-now instant package repositories
             Point i2p eepSite at apt-now directory.
     -x \ --skindex
                 Skip creating index page.
-    -h \ --help\n
+    -h \ --help
             Display this help message\n</code></pre>
 <p>to add this repository to your Debian-based system:</p>
-<pre><code>    echo &quot;deb https://cmotc.github.io/apt-now/debian unstable main&quot; | sudo tee /etc/apt/source.list.d/cmotc.github.io.list
+<pre><code>    echo &quot;deb https://cmotc.github.io/apt-now/deb-pkg unstable main&quot; | sudo tee /etc/apt/source.list.d/cmotc.github.io.list
     wget -qO - https://cmotc.github.io/apt-now/cmotc.github.io.gpg.key | sudo apt-key add -</code></pre>
 <p>In this respository, you'll find</p>
 <h3>Binary Packages:</h3>
