@@ -2,19 +2,19 @@ Format: 1.0
 Source: apt-now
 Binary: apt-now
 Architecture: all source
-Version: 20170520-1
+Version: 0.9-1
 Checksums-Md5:
- dc535c5ada81465dd6a843c3937dd79d 913 apt-now_20170520-1.dsc
- 375c1bf9817116f4393d0ee6afd2d763 6288 apt-now_20170520-1_all.deb
+ 7180dfffb429c840972e622fbfacf77f 884 apt-now_0.9-1.dsc
+ 8a7310e76fbdc295cb5eaa8442fe355f 162334 apt-now_0.9-1_all.deb
 Checksums-Sha1:
- ac8904fce3d6aaea48574b3c4425acea0827f6e6 913 apt-now_20170520-1.dsc
- 845feddfdc82b6e3e7e61174003ab662943a8c8c 6288 apt-now_20170520-1_all.deb
+ cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
+ e022c3c6a727942e378e5cc2a56f83e12d96e09f 162334 apt-now_0.9-1_all.deb
 Checksums-Sha256:
- 56deb1a3a590c1dfd809c22b95390b2e3e99e6d66552429714cb49496a8ee5d5 913 apt-now_20170520-1.dsc
- d1a442f629c33cc5afd0e8fadc233d084a1d87985e5b62b257f43580eac5bf4f 6288 apt-now_20170520-1_all.deb
+ e686bb641ebae7fca223fbd80e57f07976dd8a050dc58060956692c7e44b295a 884 apt-now_0.9-1.dsc
+ 7e6fd54348c04774c218ce8e0cd068a4254466c620f21cb0f84238a4e96e19b4 162334 apt-now_0.9-1_all.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Sat, 20 May 2017 01:46:06 -0400
+Build-Date: Sat, 20 May 2017 02:31:02 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -23,7 +23,7 @@ Installed-Build-Depends:
  base-files (= 9.9),
  base-passwd (= 3.5.43),
  bash (= 4.4-4+b2),
- binutils (= 2.28-4),
+ binutils (= 2.28-5),
  bsdmainutils (= 9.0.12+nmu1),
  bsdutils (= 1:2.29.2-1),
  bzip2 (= 1.0.6-8.1),
@@ -38,7 +38,7 @@ Installed-Build-Depends:
  debhelper (= 10.2.5),
  debianutils (= 4.8.1),
  dh-autoreconf (= 14),
- dh-strip-nondeterminism (= 0.032-1),
+ dh-strip-nondeterminism (= 0.033-2),
  diffutils (= 1:3.5-3),
  dpkg (= 1.18.23),
  dpkg-dev (= 1.18.23),
@@ -93,7 +93,7 @@ Installed-Build-Depends:
  libedit2 (= 3.1-20160903-3),
  libfdisk1 (= 2.29.2-1),
  libffi6 (= 3.2.1-6),
- libfile-stripnondeterminism-perl (= 0.032-1),
+ libfile-stripnondeterminism-perl (= 0.033-2),
  libgc1c2 (= 1:7.4.2-8),
  libgcc-4.9-dev (= 4.9.2-10),
  libgcc-5-dev (= 5.4.1-8),
@@ -153,7 +153,7 @@ Installed-Build-Depends:
  libustr-1.0-1 (= 1.0.4-6),
  libuuid1 (= 2.29.2-1),
  libxml2 (= 2.9.4+dfsg1-2.2),
- linux-libc-dev (= 4.9.18-1),
+ linux-libc-dev (= 4.9.25-1),
  login (= 1:4.4-4),
  m4 (= 1.4.18-1),
  make (= 4.1-9.1),
@@ -180,4 +180,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=2"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1495259156"
+ SOURCE_DATE_EPOCH="1495261848"

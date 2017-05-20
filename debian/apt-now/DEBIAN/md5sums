@@ -1,0 +1,12 @@
+25bdd18295f4719b826119f5b1080a3b  usr/bin/apt-now
+d711b257f867d31ff0da024c22f2f0be  usr/lib/apt-now/gpg.file
+0b6e935358ff342b9bfe7e03b3c0e85f  usr/lib/apt-now/gpg.file2
+24069c5c74bf145d3359d092403c47bd  usr/share/doc/apt-now/README.Debian
+e13c9d9b86230861c02925be107c67d3  usr/share/doc/apt-now/README.md.gz
+a823fa9f92427cec1d863770266f05da  usr/share/doc/apt-now/USAGE.md.gz
+101d85be4258feed2bc66d4a4e16be61  usr/share/doc/apt-now/aptnow-4.png
+ab0237767ab4715e8a5d5aa25f092e06  usr/share/doc/apt-now/aptnow.conf.example
+0a7d32de4a6a4b10604a9fc2852608e2  usr/share/doc/apt-now/changelog.Debian.gz
+a77c7356c6f850ed6018f25a31e219b6  usr/share/doc/apt-now/copyright
+c1de61b38337ab68c1174bd69790fdc8  usr/share/doc/apt-now/index.html
+a5fb5e2f4d90c6ad02e4f63b86fd3232  usr/share/doc/apt-now/style.css
