@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Sat, 20 May 2017 01:45:56 -0400
+Source: apt-now
+Binary: apt-now
+Architecture: source all
+Version: 20170520-1
+Distribution: unstable
+Urgency: medium
+Maintainer: idk <eyedeekay@i2pmail.org>
+Changed-By: idk <idk@fireaxe.local>
+Description:
+ apt-now    - A tool for setting up and hosting an apt repository using arbitra
+Changes:
+ apt-now (20170520-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ ac8904fce3d6aaea48574b3c4425acea0827f6e6 913 apt-now_20170520-1.dsc
+ 4ae6b90b52012d83b27ae38a033570d10f67061a 25392 apt-now_20170520.orig.tar.xz
+ 0d223ae9709a84f9f392b2944244fa3be66a3d36 2908 apt-now_20170520-1.debian.tar.xz
+ 845feddfdc82b6e3e7e61174003ab662943a8c8c 6288 apt-now_20170520-1_all.deb
+ 1bee8987f8b7b82030c70ffa7886eb584b7acfe7 5019 apt-now_20170520-1_amd64.buildinfo
+Checksums-Sha256:
+ 56deb1a3a590c1dfd809c22b95390b2e3e99e6d66552429714cb49496a8ee5d5 913 apt-now_20170520-1.dsc
+ 16c5e9881c1425830a743c8953b604b8c52c06df2319985081b418307021503f 25392 apt-now_20170520.orig.tar.xz
+ c55bb4b5a9bab76c00346034a61cfd170bf2950f5fa59481cb688328bd4adfd8 2908 apt-now_20170520-1.debian.tar.xz
+ d1a442f629c33cc5afd0e8fadc233d084a1d87985e5b62b257f43580eac5bf4f 6288 apt-now_20170520-1_all.deb
+ 45cc44cd43c4bafeb26d20c01e6725abdd25e3b0dcfd63c4b3e69acaeb72cfdd 5019 apt-now_20170520-1_amd64.buildinfo
+Files:
+ dc535c5ada81465dd6a843c3937dd79d 913 admin optional apt-now_20170520-1.dsc
+ f74134e151832f1b618395cad060673d 25392 admin optional apt-now_20170520.orig.tar.xz
+ 33c82b522358352b9353c4eebba3ce16 2908 admin optional apt-now_20170520-1.debian.tar.xz
+ 375c1bf9817116f4393d0ee6afd2d763 6288 admin optional apt-now_20170520-1_all.deb
+ 762e1aa909f44c4a5db84cd5646173bf 5019 admin optional apt-now_20170520-1_amd64.buildinfo

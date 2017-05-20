@@ -6,7 +6,7 @@ SOURCEDOC=README.md
 DEBFOLDER=apt-now
 UHTTPD=uhttpd.go
 UHTTPD_BIN=httpd-now
-DEBVERSION=$(date +%Y%m%d)
+DEBVERSION="0.9"
 CONTROL_FILE="Source: apt-now
 Section: admin
 Priority: optional
