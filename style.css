@@ -7,7 +7,7 @@ body {
 .clear { clear: both; }
 
 #header {
-	background: #808080;
+	background: #888888;
         color: #00FF99;
 }
 
@@ -28,6 +28,6 @@ img {
 	width: 40%;
         max-width: 40%;
 	float: left;
-        background: #808080;
+        background: #2F4F4F;
         color: #00FF99;
 }
