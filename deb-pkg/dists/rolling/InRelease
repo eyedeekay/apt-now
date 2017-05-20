@@ -4,7 +4,7 @@ Hash: SHA256
 Origin: cmotc.github.io
 Label: cmotc.github.io
 Codename: rolling
-Date: Sat, 20 May 2017 05:40:40 UTC
+Date: Sat, 20 May 2017 05:41:27 UTC
 Architectures: amd64 i386 armhf
 Components: main
 MD5Sum:
@@ -48,12 +48,12 @@ SHA256:
  9f9018ccb21f13c83c83e6f336c085876c38f63711d656f76fece1d55e8b9b59 84 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAlkf1tgACgkQ8F+F+kRs
-BCsHIQf/VBecXKtPwdojrVaT9z33LfBuLj/2c3wUG2ohZE97wV3DOif9FagfX5S8
-2u8w+OZOCOQajPL+pVnaULoPz1cwdodrQpabWRwPups4oLAv5P67n7P2Ilprzxv9
-B/gfF95gUVvZPSutW9vK7IsPHaq1kxRXr95rxbtO2k6iYcyWdmKWKPsezRI1YYOt
-y13uyH70GOqsxDNwyeHSVW4R2EL2tJjP4lC2h/5/4YqJRq3JbfMDFLUDF468fjVY
-J+h6ZJgavU0o+OTQPiKQ9b2MhblqIs0nSaGnVkkdLQguqFUI1AvNFb/2oBlll2y2
-AzprNMdTGty2bMA1wOogfwfUTkaw3A==
-=etNQ
+iQEzBAEBCAAdFiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAlkf1wcACgkQ8F+F+kRs
+BCvDYAgAs5y4MUU5hZ7yHh5+UySaru1hJJiiRaQW29piHZqlXHz3gv9lvN/rXZQ5
+XU65jyKRFK6+nVVfSItr/YoPR1bPerZLRVu/0BubwNRpiNGDux7NUGnL1qRIByYr
+c7WVnFJT63HQ06sTwd9W5ya5K5ZjuLQh3XQbS1PAPxsNO5GYVE7l/y+z/t0xNV9I
+Fc3VdDgpHhD3MqdKF+TiE/NHoy2GJxzcKdnQPvMC/J9f/4BzvcN/7rjHAsa0fdMf
+1gm5E0x3JgCSbZXQgmB7GI/4MDoCAVUBquqNGiSTE76izHnQPr9UrRKnUOq6qz5C
+xfM8gLZGEeFNNMtklXxSpSLX+EmYfw==
+=JW0C
 -----END PGP SIGNATURE-----
