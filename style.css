@@ -30,4 +30,5 @@ img {
 	float: left;
         background: #2F4F4F;
         color: #00FF99;
+        word-wrap: break-word;
 }
