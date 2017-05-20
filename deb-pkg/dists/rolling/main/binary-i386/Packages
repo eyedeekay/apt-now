@@ -1,0 +1,115 @@
+Package: apt-now
+Version: 20170208-1
+Architecture: all
+Maintainer: idk <eyedeekay@i2pmail.org>
+Installed-Size: 24
+Depends: markdown | discount, reprepro
+Homepage: https://cmotc.github.io/apt-now/
+Priority: optional
+Section: admin
+Filename: pool/main/a/apt-now/apt-now_20170208-1_all.deb
+Size: 6296
+SHA256: b9457f08fb165f7b3f8445663b9c12eefd8704d6a1195b6265df39583f7f24bd
+SHA1: b1a36f86f0a799e8fb2ea05fd705a427f77797bb
+MD5sum: f9af1c30bb35125653748586b71bed2d
+Description: A tool for setting up and hosting an apt repository using arbitrary
+ http/s hosts to make files accessible with extra features for git-enabled
+ hosting sites.
+ .
+ This tool, currently called apt-now but soon to be changed to repo-now, is
+ essentially a static site generator geared toward generating and formatting a
+ specific type of content in a specific type of way, the content being GNU/Linux
+ or Android/Linux binary packages, and the format being a signed repository
+ accessible from the web or something like  it  (It can also, for instance, be
+ used to statically host software  repositories over i2p with no substantial
+ modification.) It does this by taking  advantage of the structural regularity
+ of these types of resources and  constructs the whole site on the client side,
+ transmitting content to the  server only after a valid repository has been
+ built. This means that the server  doesn't have to run any code at all to
+ present the site to the end-user taking advantage of the resource over the web,
+ doesn't need to support ssh or remote desktop, and doesn't even technically
+ need to support ftp or git, as long as a way of transferring the repository to
+ the remote storage service can be included in the program.
+
+Package: hdpage
+Version: 1.0-1
+Architecture: all
+Maintainer: idk <idk@fireaxe.local>
+Installed-Size: 28
+Homepage: <insert the upstream URL, if relevant>
+Priority: optional
+Section: unknown
+Filename: pool/main/h/hdpage/hdpage_1.0-1_all.deb
+Size: 15260
+SHA256: 41b07aeaf5b2298a3f7f865b9c7a2fd2c0cefcacd68eb97d67e38b0713ddb8c9
+SHA1: 37cfd2b447d2702b96bbd92d7ad29f01f4112ce0
+MD5sum: 3a50266bc292aa0cfb82deb043b33790
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: pkpage
+Version: 1.0-1
+Architecture: all
+Maintainer: idk <eyedeekay@i2pmail.org>
+Installed-Size: 34
+Depends: markdown
+Homepage: https://cmotc.github.io/pkpage/
+Priority: optional
+Section: admin
+Filename: pool/main/p/pkpage/pkpage_1.0-1_all.deb
+Size: 16784
+SHA256: 534216153234e5f9998ba919ea353cb29b64eafbaa9795450c03db8881be8c36
+SHA1: 4221d7108ffd4396d4b280ef14dda4ea202fc2d4
+MD5sum: b4eb349cc1dc01ecd8ab0e6b70b80742
+Description: Generates a Markdown-formatted description of a software package
+ and a corresponding html page. For use with my repo generator, apt-git so that
+ it can generate package description pages automatically and make the
+ repositories easier to browse. It's a very, very basic little script. I don't
+ intend to expand it or make it smarter, instead I'm going to use it by
+ redirecting it's output and processing that. It uses dpkg --info to read the
+ contents of your debian package, grep and sed, and doesn't need bash, so it
+ should run fine on any Debian-based system.
+
+Package: scpage
+Version: 1.0-1
+Architecture: all
+Maintainer: idk <eyedeekay@i2pmail.org>
+Installed-Size: 21
+Depends: markdown | discount
+Homepage: https://cmotc.github.io/scpage/
+Priority: optional
+Section: admin
+Filename: pool/main/s/scpage/scpage_1.0-1_all.deb
+Size: 4852
+SHA256: c3881a34b30500683c5e050f0a307f7fff5cd5a81cacd10bd0e9e7d8eae944e5
+SHA1: 2c82e389cde92a2ebeb914e422ec3b79a90221f5
+MD5sum: a31e20c535b4a4b83ad7d5ebe3166a4c
+Description: Generates a Markdown-formatted description of a software package
+ and a corresponding html page. For use with my repo generator, apt-now so that
+ it can generate package description pages automatically and make the
+ repositories easier to browse. It's a very, very basic little script. I don't
+ intend to expand it or make it smarter, instead I'm going to use it by
+ redirecting it's output and processing that. It uses dpkg --info to read the
+ contents of your debian package, grep and sed, and doesn't need bash, so it
+ should run fine on any Debian-based system.
+
+Package: static-page-scripts
+Version: 1.0
+Architecture: all
+Maintainer: lair repo key <problemsolver@openmailbox.org>
+Installed-Size: 9
+Depends: pkpage, scpage, hdpage
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Filename: pool/main/s/static-page-scripts/static-page-scripts_1.0_all.deb
+Size: 2166
+SHA256: 6546a512f5a4a3319981c40618bfcd7a00be5a2f33e2ecb7f8d5408a927f7d10
+SHA1: e5e8cc95a5014c10c48b87e22242e9c366379bae
+MD5sum: 2c4afde0aa4bc51eecc3384f90786847
+Description: shell scripts to generate static pages
+ a set of shell scripts that generate markdown documents or HTML files based on
+ various common types of data.
+ .
+ second paragraph
+

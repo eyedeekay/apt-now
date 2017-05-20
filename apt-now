@@ -19,13 +19,30 @@ POLICY="main"
 KEY="Example"
 OVERRIDE="override.testing"
 
-if [ -f /usr/bin/pkpage-html ]; then
-        alias pkpage-html=/usr/bin/pkpage-html
-elif [ -f /usr/local/bin/pkpage-html ]; then
-        alias pkpage-html=/usr/local/bin/pkpage-html
-elif [ -f ./pkpage.sh ]; then
-        alias pkpage-html="/bin/bash -c \"markdown <($CURDIR/pkpage $*)\""
+if [ -f /usr/bin/pkpage-wrap ]; then
+        alias pkpage-html=/usr/bin/pkpage-wrap
+elif [ -f /usr/local/bin/pkpage-wrap ]; then
+        alias pkpage-html=/usr/local/bin/pkpage-wrap
+elif [ -f ./helpers/pkpage.sh ]; then
+        alias pkpage-html="/bin/bash -c \"$CURDIR/pkpage.sh\""
 fi
+
+if [ -f /usr/bin/scpage-wrap ]; then
+        alias scpage-html=/usr/bin/scpage-wrap
+elif [ -f /usr/local/bin/scpage-wrap ]; then
+        alias scpage-html=/usr/local/bin/scpage-wrap
+elif [ -f ./helpers/scpage.sh ]; then
+        alias scpage-html="/bin/bash -c \"$CURDIR/scpage.sh\""
+fi
+
+if [ -f /usr/bin/hdpage ]; then
+        alias hdpage="/usr/bin/hdpage -p"
+elif [ -f /usr/local/bin/hdpage ]; then
+        alias hdpage="/usr/local/bin/hdpage -p"
+elif [ -f ./helpers/hdpage.sh ]; then
+        alias scpage-html="/bin/bash -c \"$CURDIR/hdpage.sh\""
+fi
+
 SRCDIR="$CURDIR/packages"
 
 . "$CURDIR/aptnow.conf"
@@ -159,17 +176,17 @@ static pages for download. \n
 \t\t		Display this help message\n\n
 
 to add this repository to your Debian-based system:\n
-\t\t	echo \"deb https://$ORIGIN/debian $CODENAME main\" | sudo tee /etc/apt/sources.list.d/$ORIGIN.list\n
+\t\t	echo \"deb https://$ORIGIN/deb-pkg $CODENAME main\" | sudo tee /etc/apt/sources.list.d/$ORIGIN.list\n
 \t	wget -qO - https://$ORIGIN/$KEYNAME.gpg.key | sudo apt-key add -\n
 
 alternatively via Tor:\n\n
 
-\t\t	echo \"deb http://$TOR_INDEX/debian $CODENAME main\" | sudo tee /etc/apt/sources.list.d/$TOR_INDEX.list\n
+\t\t	echo \"deb http://$TOR_INDEX/deb-pkg $CODENAME main\" | sudo tee /etc/apt/sources.list.d/$TOR_INDEX.list\n
 \t	wget -qO - http://$TOR_INDEX/$KEYNAME.gpg.key | sudo apt-key add -\n
 "
 
-BASEDIR="$CURDIR/debian"
-CONFDIR="$CURDIR/debian/conf"
+BASEDIR="$CURDIR/deb-pkg"
+CONFDIR="$CURDIR/deb-pkg/conf"
 if [ ! -d "$BASEDIR" ]; then
         mkdir -p "$CONFDIR"
 else
@@ -259,42 +276,21 @@ generaterkey(){
         rm "$CURDIR/$KEYNAME.gpg.key.tmp"
     fi
 }
-hdpage(){
-    DOCTYPE_HEADER='<!DOCTYPE html>'
-    HTML='<html>'
-    if [ -z "$TITLE" ]; then
-        TITLE='web page'
-    fi
-    if [ ! -z "$LANG" ]; then
-        HTML="<html lang=$LANG>"
-    fi
-HEADER="<head>\n
-\t<meta charset=\"utf-8\">\n
-\t<title>$TITLE</title>\n
-\t<link rel=\"stylesheet\" href=\"style.css\">\n
-\t<script src=\"script.js\"></script>\n
-</head>\n
-"
-
-    echo "$DOCTYPE_HEADER"
-    echo "$HTML"
-    printf "%b\n" $HEADER
-}
 includepackages(){
 	for f in $SRCDIR/*.deb ; do
                 reprepro --basedir "$BASEDIR" includedeb "$CODENAME" "$f";
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
                 export PARENT=".."
-                hdpage > "$POSTPATH.html"
-                pkpage-html -f "$f" >> "$POSTPATH.html"
+                #hdpage > "$POSTPATH.html"
+                pkpage-wrap -f "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.dsc ; do
                 reprepro --basedir "$BASEDIR" includedsc "$CODENAME" "$f";
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
-                hdpage > "$POSTPATH.html"
-                scpage-html -f "$f" >> "$POSTPATH.html"
+                #hdpage > "$POSTPATH.html"
+                scpage-wrap -f "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.changes ; do
                 reprepro --ignore=wrongdistribution --basedir "$BASEDIR" include "$CODENAME" "$f";
@@ -328,12 +324,12 @@ generator which emits apt repositories
 
 ###to add this repository to your Debian-based system:
 
-        echo \"deb https://$ORIGIN/debian $CODENAME main\" | sudo tee /etc/apt/source.list.d/$KEYNAME.list\n
+        echo \"deb https://$ORIGIN/deb-pkg $CODENAME main\" | sudo tee /etc/apt/source.list.d/$KEYNAME.list\n
         wget -qO - https://$ORIGIN/$KEYNAME.gpg.key | sudo apt-key add -\n
 
 ###alternatively via Tor:
 
-        echo \"deb http://$TOR_INDEX/debian $CODENAME main\" | sudo tee /etc/apt/source.list.d/$TOR_INDEX.list\n
+        echo \"deb http://$TOR_INDEX/deb-pkg $CODENAME main\" | sudo tee /etc/apt/source.list.d/$TOR_INDEX.list\n
         wget -qO - http://$TOR_INDEX/$KEYNAME.gpg.key | sudo apt-key add -\n
 "
         hdpage | tee index.html
