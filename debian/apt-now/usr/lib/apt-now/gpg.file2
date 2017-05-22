@@ -1,0 +1,4 @@
+%pubring /home/gpg/batch_key.pub
+%secring /home/gpg/batch_key.sec
+%commit
+%echo done

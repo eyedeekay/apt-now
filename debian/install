@@ -1,0 +1,9 @@
+apt-now usr/bin
+gpg.file usr/lib/apt-now
+gpg.file2 usr/lib/apt-now
+index.html usr/share/doc/apt-now
+style.css usr/share/doc/apt-now
+aptnow.conf.example usr/share/doc/apt-now
+README.md usr/share/doc/apt-now
+USAGE.md usr/share/doc/apt-now
+aptnow-4.png usr/share/doc/apt-now
