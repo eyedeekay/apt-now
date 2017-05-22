@@ -1,0 +1,357 @@
+Description: Add more required packages to include-binaries
+Including more binaries. It's got to be automatic soon.
+ .
+ apt-now (0.9-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Author: idk <idk@fireaxe.local>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2017-05-22
+
+--- /dev/null
++++ apt-now-0.9/deb-pkg/pool/main/a/apt-now/apt-now_0.9-1.dsc
+@@ -0,0 +1,33 @@
++Format: 3.0 (quilt)
++Source: apt-now
++Binary: apt-now
++Architecture: all
++Version: 0.9-1
++Maintainer: idk <eyedeekay@i2pmail.org>
++Homepage: https://cmotc.github.io/apt-now/
++Standards-Version: 3.9.5
++Vcs-Browser: https://github.com/cmotc/apt-now
++Vcs-Git: git@github.com:cmotc/apt-now.git
++Build-Depends: debhelper (>= 9)
++Package-List:
++ apt-now deb admin optional arch=all
++Checksums-Sha1:
++<<<<<<< HEAD
++ 203fc7e0af743e5bb30f286bef6438c1e654fde9 4241445 apt-now_0.9.orig.tar.gz
++ 39c8562ab0dcb1257cf34db9a16176a5c1efdab0 2966164 apt-now_0.9-1.debian.tar.xz
++Checksums-Sha256:
++ 3036300a7e8e2303bbeaa546b29704c3e914289a76b8a25c79057cfaf56a15c4 4241445 apt-now_0.9.orig.tar.gz
++ 3b4a04ee31d3526d9eb6bd019f473992328a32ac813507812ae4e822437c8bfb 2966164 apt-now_0.9-1.debian.tar.xz
++Files:
++ 0b8188a66f07f1e8aa8274c047e913bc 4241445 apt-now_0.9.orig.tar.gz
++ c8b74fbac421dc977c1353ed999e5826 2966164 apt-now_0.9-1.debian.tar.xz
++=======
++ fd10fae9b0f0e5fdcfb4da557a90cae971932a53 1294304 apt-now_0.9.orig.tar.xz
++ 228ba4d170f3a8fdb64e1ec2878f87bac6beb0ab 2972 apt-now_0.9-1.debian.tar.xz
++Checksums-Sha256:
++ d00d9b924e224326f4c94822dfd9b791f27d7e1018e5d1a4aa17a71584c208a3 1294304 apt-now_0.9.orig.tar.xz
++ bb05a38f4cdf6bfc8a3934cb5a9432e14e2992e449b04a6f855565e0337b8724 2972 apt-now_0.9-1.debian.tar.xz
++Files:
++ 77612e4e3bb7788651ac479ffbb2c19c 1294304 apt-now_0.9.orig.tar.xz
++ 7e4978faf0f33b37af7a597f563fa9e4 2972 apt-now_0.9-1.debian.tar.xz
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639
+--- apt-now-0.9.orig/info/apt-now_0.9-1.dsc.html
++++ apt-now-0.9/info/apt-now_0.9-1.dsc.html
+@@ -2,21 +2,6 @@
+ <html lang=en_US.UTF-8>
+ <head>
+ 
+-	<meta charset="utf-8">
+-
+-	<title>/apt-now_0.9-1.dsc</title>
+-
+-	<link rel="stylesheet" href="../style.css">
+-
+-	<script src="script.js"></script>
+-
+-</head>
+-
+-
+-<!DOCTYPE html>
+-<html lang=en_US.UTF-8>
+-<head>
+-
+ 	<meta
+ charset="utf-8">
+ 
+@@ -31,4 +16,42 @@ src="script.js"></script>
+ 
+ </head>
+ 
++
++<div id="header">
++
++<p>============= </p>
++<h2>Source: apt-now </h2>
++
++</div>
++
++
++<div id="content">
++
++<h3>Version: 0.9-1</h3>
++
++<p>Standards-Version: 3.9.5</p>
++<h4>Maintainer: idk <a href="&#x6D;&#x61;&#x69;&#108;&#x74;o:&#101;&#121;&#101;&#100;&#x65;&#x65;&#x6B;&#97;&#121;&#64;&#x69;&#50;&#112;&#x6D;&#97;i&#x6C;.&#111;&#x72;&#x67;">&#101;&#121;&#101;&#100;&#x65;&#x65;&#x6B;&#97;&#121;&#64;&#x69;&#50;&#112;&#x6D;&#97;i&#x6C;.&#111;&#x72;&#x67;</a></h4>
++<h3>Build-Depends:</h3>
++
++<ul>
++<li>debhelper (>= 9)</li>
++</ul>
++<h3>Vcs-Browser:</h3>
++
++<ul>
++<li>https://github.com/cmotc/apt-now</li>
++</ul>
++
++</div>
++
++
++<div id="sidebar">
++
++<p>Homepage:<a href="https://cmotc.github.io/apt-now/"> https://cmotc.github.io/apt-now/ </a></p>
++<h4>Architecture: all</h4>
++<h4>Vcs-Git: git@github.com:cmotc/apt-now.git</h4>
++<h4>Binary: apt-now</h4>
++
++</div>
++
+ </html>
+--- apt-now-0.9.orig/info/apt-now_0.9-1_all.deb.html
++++ apt-now-0.9/info/apt-now_0.9-1_all.deb.html
+@@ -2,21 +2,6 @@
+ <html lang=en_US.UTF-8>
+ <head>
+ 
+-	<meta charset="utf-8">
+-
+-	<title>/apt-now_0.9-1_all.deb</title>
+-
+-	<link rel="stylesheet" href="../style.css">
+-
+-	<script src="script.js"></script>
+-
+-</head>
+-
+-
+-<!DOCTYPE html>
+-<html lang=en_US.UTF-8>
+-<head>
+-
+ 	<meta
+ charset="utf-8">
+ 
+@@ -32,54 +17,5 @@ src="script.js"></script>
+ </head>
+ 
+   <body>
+-
+-<div id="header">
+-
+-
+-</div>
+-
+-
+-<div id="content">
+-
+-<h3>Version: 0.9-1</h3>
+-<h4>Maintainer: idk eyedeekay@i2pmail.org</h4>
+-<h4>Installed-Size: 207</h4>
+-<h3>Depends:</h3>
+-
+-<ul>
+-<li>markdown | discount, reprepro</li>
+-</ul>
+-
+-</div>
+-
+-
+-<div id="sidebar">
+-
+-<h3>Description:</h3>
+-
+-<p>A tool for setting up and hosting an apt repository using arbitrary
+-http/s hosts to make files accessible with extra features for git-enabled
+-hosting sites.
+-.
+-This tool, currently called apt-now but soon to be changed to repo-now, is
+-essentially a static site generator geared toward generating and formatting a
+-specific type of content in a specific type of way, the content being GNU/Linux
+-or Android/Linux binary packages, and the format being a signed repository
+-accessible from the web or something like  it  (It can also, for instance, be
+-used to statically host software  repositories over i2p with no substantial
+-modification.) It does this by taking  advantage of the structural regularity
+-of these types of resources and  constructs the whole site on the client side,
+-transmitting content to the  server only after a valid repository has been
+-built. This means that the server  doesn't have to run any code at all to
+-present the site to the end-user taking advantage of the resource over the web,
+-doesn't need to support ssh or remote desktop, and doesn't even technically
+-need to support ftp or git, as long as a way of transferring the repository to
+-the remote storage service can be included in the program.</p>
+-<p>Homepage:<a href="https://cmotc.github.io/apt-now/"> https://cmotc.github.io/apt-now/ </a></p>
+-<h4>Section: admin</h4>
+-<h4>Priority: optional</h4>
+-
+-</div>
+-
+   </body>
+ </html>
+--- apt-now-0.9.orig/packages/apt-now_0.9-1.dsc
++++ apt-now-0.9/packages/apt-now_0.9-1.dsc
+@@ -12,6 +12,16 @@ Build-Depends: debhelper (>= 9)
+ Package-List:
+  apt-now deb admin optional arch=all
+ Checksums-Sha1:
++<<<<<<< HEAD
++ 203fc7e0af743e5bb30f286bef6438c1e654fde9 4241445 apt-now_0.9.orig.tar.gz
++ 39c8562ab0dcb1257cf34db9a16176a5c1efdab0 2966164 apt-now_0.9-1.debian.tar.xz
++Checksums-Sha256:
++ 3036300a7e8e2303bbeaa546b29704c3e914289a76b8a25c79057cfaf56a15c4 4241445 apt-now_0.9.orig.tar.gz
++ 3b4a04ee31d3526d9eb6bd019f473992328a32ac813507812ae4e822437c8bfb 2966164 apt-now_0.9-1.debian.tar.xz
++Files:
++ 0b8188a66f07f1e8aa8274c047e913bc 4241445 apt-now_0.9.orig.tar.gz
++ c8b74fbac421dc977c1353ed999e5826 2966164 apt-now_0.9-1.debian.tar.xz
++=======
+  fd10fae9b0f0e5fdcfb4da557a90cae971932a53 1294304 apt-now_0.9.orig.tar.xz
+  228ba4d170f3a8fdb64e1ec2878f87bac6beb0ab 2972 apt-now_0.9-1.debian.tar.xz
+ Checksums-Sha256:
+@@ -20,3 +30,4 @@ Checksums-Sha256:
+ Files:
+  77612e4e3bb7788651ac479ffbb2c19c 1294304 apt-now_0.9.orig.tar.xz
+  7e4978faf0f33b37af7a597f563fa9e4 2972 apt-now_0.9-1.debian.tar.xz
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639
+--- /dev/null
++++ apt-now-0.9/packages/apt-now_0.9-1.dsc.md
+@@ -0,0 +1,17 @@
++ 
++============= 
++
++Source: apt-now 
++------------- 
++
++###Version: 0.9-1
++Standards-Version: 3.9.5
++####Maintainer: idk <eyedeekay@i2pmail.org>
++###Build-Depends:
++  * debhelper (>= 9)
++###Vcs-Browser:
++  * https://github.com/cmotc/apt-now
++Homepage:[ https://cmotc.github.io/apt-now/ ](https://cmotc.github.io/apt-now/)
++####Architecture: all
++####Vcs-Git: git@github.com:cmotc/apt-now.git
++####Binary: apt-now
+--- apt-now-0.9.orig/packages/apt-now_0.9-1_amd64.build
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.build
+@@ -3,16 +3,27 @@ dpkg-buildpackage: info: source package
+ dpkg-buildpackage: info: source version 0.9-1
+ dpkg-buildpackage: info: source distribution unstable
+ dpkg-buildpackage: info: source changed by idk <idk@fireaxe.local>
++<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
++ dpkg-source --before-build apt-now
++=======
+  dpkg-source --before-build apt-now-0.9
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
+ dpkg-buildpackage: info: host architecture amd64
+  fakeroot debian/rules clean
+ dh clean
+    dh_testdir
+    dh_auto_clean
+    dh_clean
++<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
++ dpkg-source -b apt-now
++dpkg-source: info: using source format '3.0 (quilt)'
++dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.gz
++dpkg-source: warning: newly created empty file 'packages/apt-now_0.9-1_all.deb.md' will not be represented in diff
++=======
+  dpkg-source -b apt-now-0.9
+ dpkg-source: info: using source format '3.0 (quilt)'
+ dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.xz
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
+ dpkg-source: info: building apt-now in apt-now_0.9-1.debian.tar.xz
+ dpkg-source: info: building apt-now in apt-now_0.9-1.dsc
+  debian/rules build
+@@ -46,12 +57,12 @@ dpkg-deb: building package 'apt-now' in
+  dpkg-genbuildinfo
+  dpkg-genchanges  >../apt-now_0.9-1_amd64.changes
+ dpkg-genchanges: info: including full source code in upload
++<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
++ dpkg-source --after-build apt-now
++=======
+  dpkg-source --after-build apt-now-0.9
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
+ dpkg-buildpackage: info: full upload (original source is included)
+ Now running lintian...
+ Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.
+ Finished running lintian.
+-
+-WARNING generated by debuild:
+-Making debian/rules executable!
+-
+--- apt-now-0.9.orig/packages/apt-now_0.9-1_amd64.buildinfo
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.buildinfo
+@@ -4,6 +4,19 @@ Binary: apt-now
+ Architecture: all source
+ Version: 0.9-1
+ Checksums-Md5:
++<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.buildinfo
++ 91d1781ece3816731a9663c44f8565ce 893 apt-now_0.9-1.dsc
++ 948826d2a4deac772f548b49077b97e9 162370 apt-now_0.9-1_all.deb
++Checksums-Sha1:
++ 32605be7145e00a3edcaba8fad3b2babc855ed09 893 apt-now_0.9-1.dsc
++ 55e32b92791c5da8e01ee3a4d93a967c699450b5 162370 apt-now_0.9-1_all.deb
++Checksums-Sha256:
++ 93fc86fc4c08264499a703b2aba92be1097ad8e3b00d041487c1cb7d17fcc9c8 893 apt-now_0.9-1.dsc
++ d93b6db064fd8bf48f6c0fab1af379b0558c9be1448f93c8201fe2dce2ddd1e9 162370 apt-now_0.9-1_all.deb
++Build-Origin: Devuan
++Build-Architecture: amd64
++Build-Date: Mon, 22 May 2017 18:03:35 -0400
++=======
+  7180dfffb429c840972e622fbfacf77f 884 apt-now_0.9-1.dsc
+  8a7310e76fbdc295cb5eaa8442fe355f 162334 apt-now_0.9-1_all.deb
+ Checksums-Sha1:
+@@ -15,6 +28,7 @@ Checksums-Sha256:
+ Build-Origin: Devuan
+ Build-Architecture: amd64
+ Build-Date: Sat, 20 May 2017 02:31:02 -0400
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.buildinfo
+ Installed-Build-Depends:
+  autoconf (= 2.69-10),
+  automake (= 1:1.15-6),
+--- apt-now-0.9.orig/packages/apt-now_0.9-1_amd64.changes
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.changes
+@@ -15,6 +15,25 @@ Changes:
+  .
+    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+ Checksums-Sha1:
++<<<<<<< HEAD
++ 32605be7145e00a3edcaba8fad3b2babc855ed09 893 apt-now_0.9-1.dsc
++ 203fc7e0af743e5bb30f286bef6438c1e654fde9 4241445 apt-now_0.9.orig.tar.gz
++ 39c8562ab0dcb1257cf34db9a16176a5c1efdab0 2966164 apt-now_0.9-1.debian.tar.xz
++ 55e32b92791c5da8e01ee3a4d93a967c699450b5 162370 apt-now_0.9-1_all.deb
++ 5b7c0d233da98c148eb44e4f4737c5b948e1794d 4990 apt-now_0.9-1_amd64.buildinfo
++Checksums-Sha256:
++ 93fc86fc4c08264499a703b2aba92be1097ad8e3b00d041487c1cb7d17fcc9c8 893 apt-now_0.9-1.dsc
++ 3036300a7e8e2303bbeaa546b29704c3e914289a76b8a25c79057cfaf56a15c4 4241445 apt-now_0.9.orig.tar.gz
++ 3b4a04ee31d3526d9eb6bd019f473992328a32ac813507812ae4e822437c8bfb 2966164 apt-now_0.9-1.debian.tar.xz
++ d93b6db064fd8bf48f6c0fab1af379b0558c9be1448f93c8201fe2dce2ddd1e9 162370 apt-now_0.9-1_all.deb
++ e378923a8ab693432c81196135e667099e2fde484d7687cb1c832ce3f86ca5c2 4990 apt-now_0.9-1_amd64.buildinfo
++Files:
++ 91d1781ece3816731a9663c44f8565ce 893 admin optional apt-now_0.9-1.dsc
++ 0b8188a66f07f1e8aa8274c047e913bc 4241445 admin optional apt-now_0.9.orig.tar.gz
++ c8b74fbac421dc977c1353ed999e5826 2966164 admin optional apt-now_0.9-1.debian.tar.xz
++ 948826d2a4deac772f548b49077b97e9 162370 admin optional apt-now_0.9-1_all.deb
++ 6efe52d9570022ac22bc2d14d48f08b4 4990 admin optional apt-now_0.9-1_amd64.buildinfo
++=======
+  cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
+  fd10fae9b0f0e5fdcfb4da557a90cae971932a53 1294304 apt-now_0.9.orig.tar.xz
+  228ba4d170f3a8fdb64e1ec2878f87bac6beb0ab 2972 apt-now_0.9-1.debian.tar.xz
+@@ -32,3 +51,4 @@ Files:
+  7e4978faf0f33b37af7a597f563fa9e4 2972 admin optional apt-now_0.9-1.debian.tar.xz
+  8a7310e76fbdc295cb5eaa8442fe355f 162334 admin optional apt-now_0.9-1_all.deb
+  fcf42866f920f97ad28af44bd52c58fb 4990 admin optional apt-now_0.9-1_amd64.buildinfo
++>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639

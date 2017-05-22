@@ -1,0 +1,454 @@
+Description: Setting include-binaries
+ This package needs to be aware of the resource files it hosts.
+ .
+ apt-now (0.9-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Author: idk <idk@fireaxe.local>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2017-05-22
+
+--- /dev/null
++++ apt-now-0.9/info/apt-now_0.9-1.dsc.html
+@@ -0,0 +1,34 @@
++<!DOCTYPE html>
++<html lang=en_US.UTF-8>
++<head>
++
++	<meta charset="utf-8">
++
++	<title>/apt-now_0.9-1.dsc</title>
++
++	<link rel="stylesheet" href="../style.css">
++
++	<script src="script.js"></script>
++
++</head>
++
++
++<!DOCTYPE html>
++<html lang=en_US.UTF-8>
++<head>
++
++	<meta
++charset="utf-8">
++
++	<title>/apt-now_0.9-1.dsc</title>
++
++	<link
++rel="stylesheet"
++href="../style.css">
++
++	<script
++src="script.js"></script>
++
++</head>
++
++</html>
+--- /dev/null
++++ apt-now-0.9/info/apt-now_0.9-1_all.deb.html
+@@ -0,0 +1,85 @@
++<!DOCTYPE html>
++<html lang=en_US.UTF-8>
++<head>
++
++	<meta charset="utf-8">
++
++	<title>/apt-now_0.9-1_all.deb</title>
++
++	<link rel="stylesheet" href="../style.css">
++
++	<script src="script.js"></script>
++
++</head>
++
++
++<!DOCTYPE html>
++<html lang=en_US.UTF-8>
++<head>
++
++	<meta
++charset="utf-8">
++
++	<title>/apt-now_0.9-1_all.deb</title>
++
++	<link
++rel="stylesheet"
++href="../style.css">
++
++	<script
++src="script.js"></script>
++
++</head>
++
++  <body>
++
++<div id="header">
++
++
++</div>
++
++
++<div id="content">
++
++<h3>Version: 0.9-1</h3>
++<h4>Maintainer: idk eyedeekay@i2pmail.org</h4>
++<h4>Installed-Size: 207</h4>
++<h3>Depends:</h3>
++
++<ul>
++<li>markdown | discount, reprepro</li>
++</ul>
++
++</div>
++
++
++<div id="sidebar">
++
++<h3>Description:</h3>
++
++<p>A tool for setting up and hosting an apt repository using arbitrary
++http/s hosts to make files accessible with extra features for git-enabled
++hosting sites.
++.
++This tool, currently called apt-now but soon to be changed to repo-now, is
++essentially a static site generator geared toward generating and formatting a
++specific type of content in a specific type of way, the content being GNU/Linux
++or Android/Linux binary packages, and the format being a signed repository
++accessible from the web or something like  it  (It can also, for instance, be
++used to statically host software  repositories over i2p with no substantial
++modification.) It does this by taking  advantage of the structural regularity
++of these types of resources and  constructs the whole site on the client side,
++transmitting content to the  server only after a valid repository has been
++built. This means that the server  doesn't have to run any code at all to
++present the site to the end-user taking advantage of the resource over the web,
++doesn't need to support ssh or remote desktop, and doesn't even technically
++need to support ftp or git, as long as a way of transferring the repository to
++the remote storage service can be included in the program.</p>
++<p>Homepage:<a href="https://cmotc.github.io/apt-now/"> https://cmotc.github.io/apt-now/ </a></p>
++<h4>Section: admin</h4>
++<h4>Priority: optional</h4>
++
++</div>
++
++  </body>
++</html>
+--- /dev/null
++++ apt-now-0.9/packages/apt-now_0.9-1.dsc
+@@ -0,0 +1,22 @@
++Format: 3.0 (quilt)
++Source: apt-now
++Binary: apt-now
++Architecture: all
++Version: 0.9-1
++Maintainer: idk <eyedeekay@i2pmail.org>
++Homepage: https://cmotc.github.io/apt-now/
++Standards-Version: 3.9.5
++Vcs-Browser: https://github.com/cmotc/apt-now
++Vcs-Git: git@github.com:cmotc/apt-now.git
++Build-Depends: debhelper (>= 9)
++Package-List:
++ apt-now deb admin optional arch=all
++Checksums-Sha1:
++ fd10fae9b0f0e5fdcfb4da557a90cae971932a53 1294304 apt-now_0.9.orig.tar.xz
++ 228ba4d170f3a8fdb64e1ec2878f87bac6beb0ab 2972 apt-now_0.9-1.debian.tar.xz
++Checksums-Sha256:
++ d00d9b924e224326f4c94822dfd9b791f27d7e1018e5d1a4aa17a71584c208a3 1294304 apt-now_0.9.orig.tar.xz
++ bb05a38f4cdf6bfc8a3934cb5a9432e14e2992e449b04a6f855565e0337b8724 2972 apt-now_0.9-1.debian.tar.xz
++Files:
++ 77612e4e3bb7788651ac479ffbb2c19c 1294304 apt-now_0.9.orig.tar.xz
++ 7e4978faf0f33b37af7a597f563fa9e4 2972 apt-now_0.9-1.debian.tar.xz
+--- /dev/null
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.build
+@@ -0,0 +1,57 @@
++ dpkg-buildpackage -rfakeroot -us -uc
++dpkg-buildpackage: info: source package apt-now
++dpkg-buildpackage: info: source version 0.9-1
++dpkg-buildpackage: info: source distribution unstable
++dpkg-buildpackage: info: source changed by idk <idk@fireaxe.local>
++ dpkg-source --before-build apt-now-0.9
++dpkg-buildpackage: info: host architecture amd64
++ fakeroot debian/rules clean
++dh clean
++   dh_testdir
++   dh_auto_clean
++   dh_clean
++ dpkg-source -b apt-now-0.9
++dpkg-source: info: using source format '3.0 (quilt)'
++dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.xz
++dpkg-source: info: building apt-now in apt-now_0.9-1.debian.tar.xz
++dpkg-source: info: building apt-now in apt-now_0.9-1.dsc
++ debian/rules build
++dh build
++   dh_testdir
++   dh_update_autotools_config
++   dh_auto_configure
++   dh_auto_build
++   dh_auto_test
++   create-stamp debian/debhelper-build-stamp
++ fakeroot debian/rules binary
++dh binary
++   create-stamp debian/debhelper-build-stamp
++   dh_testroot
++   dh_prep
++   dh_auto_install
++   dh_install
++   dh_installdocs
++   dh_installchangelogs
++   dh_perl
++   dh_link
++   dh_strip_nondeterminism
++	Normalizing debian/apt-now/usr/share/doc/apt-now/aptnow-4.png
++   dh_compress
++   dh_fixperms
++   dh_installdeb
++   dh_gencontrol
++   dh_md5sums
++   dh_builddeb
++dpkg-deb: building package 'apt-now' in '../apt-now_0.9-1_all.deb'.
++ dpkg-genbuildinfo
++ dpkg-genchanges  >../apt-now_0.9-1_amd64.changes
++dpkg-genchanges: info: including full source code in upload
++ dpkg-source --after-build apt-now-0.9
++dpkg-buildpackage: info: full upload (original source is included)
++Now running lintian...
++Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.
++Finished running lintian.
++
++WARNING generated by debuild:
++Making debian/rules executable!
++
+--- /dev/null
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.buildinfo
+@@ -0,0 +1,183 @@
++Format: 1.0
++Source: apt-now
++Binary: apt-now
++Architecture: all source
++Version: 0.9-1
++Checksums-Md5:
++ 7180dfffb429c840972e622fbfacf77f 884 apt-now_0.9-1.dsc
++ 8a7310e76fbdc295cb5eaa8442fe355f 162334 apt-now_0.9-1_all.deb
++Checksums-Sha1:
++ cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
++ e022c3c6a727942e378e5cc2a56f83e12d96e09f 162334 apt-now_0.9-1_all.deb
++Checksums-Sha256:
++ e686bb641ebae7fca223fbd80e57f07976dd8a050dc58060956692c7e44b295a 884 apt-now_0.9-1.dsc
++ 7e6fd54348c04774c218ce8e0cd068a4254466c620f21cb0f84238a4e96e19b4 162334 apt-now_0.9-1_all.deb
++Build-Origin: Devuan
++Build-Architecture: amd64
++Build-Date: Sat, 20 May 2017 02:31:02 -0400
++Installed-Build-Depends:
++ autoconf (= 2.69-10),
++ automake (= 1:1.15-6),
++ autopoint (= 0.19.8.1-2),
++ autotools-dev (= 20161112.1),
++ base-files (= 9.9),
++ base-passwd (= 3.5.43),
++ bash (= 4.4-4+b2),
++ binutils (= 2.28-5),
++ bsdmainutils (= 9.0.12+nmu1),
++ bsdutils (= 1:2.29.2-1),
++ bzip2 (= 1.0.6-8.1),
++ clang-3.8 (= 1:3.8.1-23),
++ coreutils (= 8.26-3),
++ cpp (= 4:6.3.0-4),
++ cpp-4.9 (= 4.9.2-10),
++ cpp-5 (= 5.4.1-8),
++ cpp-6 (= 6.3.0-16),
++ dash (= 0.5.8-2.4),
++ debconf (= 1.5.60),
++ debhelper (= 10.2.5),
++ debianutils (= 4.8.1),
++ dh-autoreconf (= 14),
++ dh-strip-nondeterminism (= 0.033-2),
++ diffutils (= 1:3.5-3),
++ dpkg (= 1.18.23),
++ dpkg-dev (= 1.18.23),
++ e2fslibs (= 1.43.4-2),
++ e2fsprogs (= 1.43.4-2),
++ file (= 1:5.30-1),
++ findutils (= 4.6.0+git+20161106-2),
++ gawk (= 1:4.1.4+dfsg-1),
++ gcc (= 4:6.3.0-4),
++ gcc-4.9 (= 4.9.2-10),
++ gcc-4.9-base (= 4.9.2-10),
++ gcc-5 (= 5.4.1-8),
++ gcc-5-base (= 5.4.1-8),
++ gcc-6 (= 6.3.0-16),
++ gcc-6-base (= 6.3.0-16),
++ gettext (= 0.19.8.1-2),
++ gettext-base (= 0.19.8.1-2),
++ grep (= 2.27-2),
++ groff-base (= 1.22.3-9),
++ gzip (= 1.6-5+b1),
++ hostname (= 3.18+b1),
++ init-system-helpers (= 1.48),
++ install-info (= 6.3.0.dfsg.1-1+b2),
++ intltool-debian (= 0.35.0+20060710.4),
++ libacl1 (= 2.2.52-3+b1),
++ libarchive-zip-perl (= 1.59-1),
++ libasan1 (= 4.9.2-10),
++ libasan2 (= 5.4.1-8),
++ libasan3 (= 6.3.0-16),
++ libatomic1 (= 6.3.0-16),
++ libattr1 (= 1:2.4.47-2+b2),
++ libaudit-common (= 1:2.6.7-2),
++ libaudit1 (= 1:2.6.7-2),
++ libblkid1 (= 2.29.2-1),
++ libbsd0 (= 0.8.3-1),
++ libbz2-1.0 (= 1.0.6-8.1),
++ libc-bin (= 2.24-10),
++ libc-dev-bin (= 2.24-10),
++ libc6 (= 2.24-10),
++ libc6-dev (= 2.24-10),
++ libcap-ng0 (= 0.7.7-3+b1),
++ libcc1-0 (= 6.3.0-16),
++ libcilkrts5 (= 6.3.0-16),
++ libclang-common-3.8-dev (= 1:3.8.1-23),
++ libclang1-3.8 (= 1:3.8.1-23),
++ libcloog-isl4 (= 0.18.4-1+b1),
++ libcomerr2 (= 1.43.4-2),
++ libcroco3 (= 0.6.11-3),
++ libdb5.3 (= 5.3.28-12+b1),
++ libdebconfclient0 (= 0.227),
++ libdpkg-perl (= 1.18.23),
++ libedit2 (= 3.1-20160903-3),
++ libfdisk1 (= 2.29.2-1),
++ libffi6 (= 3.2.1-6),
++ libfile-stripnondeterminism-perl (= 0.033-2),
++ libgc1c2 (= 1:7.4.2-8),
++ libgcc-4.9-dev (= 4.9.2-10),
++ libgcc-5-dev (= 5.4.1-8),
++ libgcc-6-dev (= 6.3.0-16),
++ libgcc1 (= 1:6.3.0-16),
++ libgcrypt20 (= 1.7.6-1),
++ libgdbm3 (= 1.8.3-14),
++ libglib2.0-0 (= 2.50.3-2),
++ libgmp10 (= 2:6.1.2+dfsg-1),
++ libgomp1 (= 6.3.0-16),
++ libgpg-error0 (= 1.26-2),
++ libicu57 (= 57.1-6),
++ libisl10 (= 0.12.2-2),
++ libisl15 (= 0.18-1),
++ libitm1 (= 6.3.0-16),
++ libllvm3.8 (= 1:3.8.1-23),
++ liblsan0 (= 6.3.0-16),
++ liblz4-1 (= 0.0~r131-2+b1),
++ liblzma5 (= 5.2.2-1.2+b1),
++ libmagic-mgc (= 1:5.30-1),
++ libmagic1 (= 1:5.30-1),
++ libmount1 (= 2.29.2-1),
++ libmpc3 (= 1.0.3-1+b2),
++ libmpfr4 (= 3.1.5-1),
++ libmpx0 (= 5.4.1-8),
++ libmpx2 (= 6.3.0-16),
++ libncurses5 (= 6.0+20161126-1),
++ libncursesw5 (= 6.0+20161126-1),
++ libobjc-6-dev (= 6.3.0-16),
++ libobjc4 (= 6.3.0-16),
++ libpam-modules (= 1.1.8-3.5),
++ libpam-modules-bin (= 1.1.8-3.5),
++ libpam-runtime (= 1.1.8-3.5),
++ libpam0g (= 1.1.8-3.5),
++ libpcre3 (= 2:8.39-3),
++ libperl5.24 (= 5.24.1-2),
++ libpipeline1 (= 1.4.1-2),
++ libquadmath0 (= 6.3.0-16),
++ libreadline7 (= 7.0-2),
++ libselinux1 (= 2.6-3+b1),
++ libsemanage-common (= 2.6-2),
++ libsemanage1 (= 2.6-2),
++ libsepol1 (= 2.6-2),
++ libsigsegv2 (= 2.10-5),
++ libsmartcols1 (= 2.29.2-1),
++ libss2 (= 1.43.4-2),
++ libstdc++-6-dev (= 6.3.0-16),
++ libstdc++6 (= 6.3.0-16),
++ libsystemd0 (= 232-23),
++ libtimedate-perl (= 2.3000-2),
++ libtinfo5 (= 6.0+20161126-1),
++ libtool (= 2.4.6-2),
++ libtsan0 (= 6.3.0-16),
++ libubsan0 (= 6.3.0-16),
++ libudev1 (= 232-23),
++ libunistring0 (= 0.9.6+really0.9.3-0.1),
++ libustr-1.0-1 (= 1.0.4-6),
++ libuuid1 (= 2.29.2-1),
++ libxml2 (= 2.9.4+dfsg1-2.2),
++ linux-libc-dev (= 4.9.25-1),
++ login (= 1:4.4-4),
++ m4 (= 1.4.18-1),
++ make (= 4.1-9.1),
++ man-db (= 2.7.6.1-2),
++ mawk (= 1.3.3-17+b3),
++ mount (= 2.29.2-1),
++ multiarch-support (= 2.24-10),
++ ncurses-base (= 6.0+20161126-1),
++ ncurses-bin (= 6.0+20161126-1),
++ passwd (= 1:4.4-4),
++ patch (= 2.7.5-1+b2),
++ perl (= 5.24.1-2),
++ perl-base (= 5.24.1-2),
++ perl-modules-5.24 (= 5.24.1-2),
++ po-debconf (= 1.0.20),
++ readline-common (= 7.0-2),
++ sed (= 4.4-1),
++ sensible-utils (= 0.0.9),
++ sysvinit-utils (= 2.88dsf-59.9),
++ tar (= 1.29b-1.1),
++ util-linux (= 2.29.2-1),
++ xz-utils (= 5.2.2-1.2+b1),
++ zlib1g (= 1:1.2.8.dfsg-5)
++Environment:
++ DEB_BUILD_OPTIONS="parallel=2"
++ LANG="en_US.UTF-8"
++ SOURCE_DATE_EPOCH="1495261848"
+--- /dev/null
++++ apt-now-0.9/packages/apt-now_0.9-1_amd64.changes
+@@ -0,0 +1,34 @@
++Format: 1.8
++Date: Sat, 20 May 2017 02:30:48 -0400
++Source: apt-now
++Binary: apt-now
++Architecture: source all
++Version: 0.9-1
++Distribution: unstable
++Urgency: medium
++Maintainer: idk <eyedeekay@i2pmail.org>
++Changed-By: idk <idk@fireaxe.local>
++Description:
++ apt-now    - A tool for setting up and hosting an apt repository using arbitra
++Changes:
++ apt-now (0.9-1) unstable; urgency=medium
++ .
++   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
++Checksums-Sha1:
++ cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
++ fd10fae9b0f0e5fdcfb4da557a90cae971932a53 1294304 apt-now_0.9.orig.tar.xz
++ 228ba4d170f3a8fdb64e1ec2878f87bac6beb0ab 2972 apt-now_0.9-1.debian.tar.xz
++ e022c3c6a727942e378e5cc2a56f83e12d96e09f 162334 apt-now_0.9-1_all.deb
++ 96f64d3e6db85d3a02c53df494c7d9e215ee02fe 4990 apt-now_0.9-1_amd64.buildinfo
++Checksums-Sha256:
++ e686bb641ebae7fca223fbd80e57f07976dd8a050dc58060956692c7e44b295a 884 apt-now_0.9-1.dsc
++ d00d9b924e224326f4c94822dfd9b791f27d7e1018e5d1a4aa17a71584c208a3 1294304 apt-now_0.9.orig.tar.xz
++ bb05a38f4cdf6bfc8a3934cb5a9432e14e2992e449b04a6f855565e0337b8724 2972 apt-now_0.9-1.debian.tar.xz
++ 7e6fd54348c04774c218ce8e0cd068a4254466c620f21cb0f84238a4e96e19b4 162334 apt-now_0.9-1_all.deb
++ 2676b243c4a358e4bd585d595ef46b4f1993273a6b91a32a9db81a255a252a0e 4990 apt-now_0.9-1_amd64.buildinfo
++Files:
++ 7180dfffb429c840972e622fbfacf77f 884 admin optional apt-now_0.9-1.dsc
++ 77612e4e3bb7788651ac479ffbb2c19c 1294304 admin optional apt-now_0.9.orig.tar.xz
++ 7e4978faf0f33b37af7a597f563fa9e4 2972 admin optional apt-now_0.9-1.debian.tar.xz
++ 8a7310e76fbdc295cb5eaa8442fe355f 162334 admin optional apt-now_0.9-1_all.deb
++ fcf42866f920f97ad28af44bd52c58fb 4990 admin optional apt-now_0.9-1_amd64.buildinfo

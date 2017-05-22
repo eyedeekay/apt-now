@@ -1,0 +1,5 @@
+apt-now (0.9-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- idk <idk@fireaxe.local>  Sat, 20 May 2017 02:30:48 -0400
