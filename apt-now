@@ -459,3 +459,5 @@ if [ "$USE_I2PD" = "YES" ]; then
     fi
     sudo service i2pd restart
 fi
+
+git commit "make sure nothing's changed" && git push
