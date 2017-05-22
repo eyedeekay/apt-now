@@ -3,17 +3,27 @@ dpkg-buildpackage: info: source package apt-now
 dpkg-buildpackage: info: source version 0.9-1
 dpkg-buildpackage: info: source distribution unstable
 dpkg-buildpackage: info: source changed by idk <idk@fireaxe.local>
+<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
  dpkg-source --before-build apt-now
+=======
+ dpkg-source --before-build apt-now-0.9
+>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
 dpkg-buildpackage: info: host architecture amd64
  fakeroot debian/rules clean
 dh clean
    dh_testdir
    dh_auto_clean
    dh_clean
+<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
  dpkg-source -b apt-now
 dpkg-source: info: using source format '3.0 (quilt)'
 dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.gz
 dpkg-source: warning: newly created empty file 'packages/apt-now_0.9-1_all.deb.md' will not be represented in diff
+=======
+ dpkg-source -b apt-now-0.9
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.xz
+>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
 dpkg-source: info: building apt-now in apt-now_0.9-1.debian.tar.xz
 dpkg-source: info: building apt-now in apt-now_0.9-1.dsc
  debian/rules build
@@ -47,7 +57,11 @@ dpkg-deb: building package 'apt-now' in '../apt-now_0.9-1_all.deb'.
  dpkg-genbuildinfo
  dpkg-genchanges  >../apt-now_0.9-1_amd64.changes
 dpkg-genchanges: info: including full source code in upload
+<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.build
  dpkg-source --after-build apt-now
+=======
+ dpkg-source --after-build apt-now-0.9
+>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.build
 dpkg-buildpackage: info: full upload (original source is included)
 Now running lintian...
 Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.

@@ -4,6 +4,7 @@ Binary: apt-now
 Architecture: all source
 Version: 0.9-1
 Checksums-Md5:
+<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.buildinfo
  91d1781ece3816731a9663c44f8565ce 893 apt-now_0.9-1.dsc
  948826d2a4deac772f548b49077b97e9 162370 apt-now_0.9-1_all.deb
 Checksums-Sha1:
@@ -15,6 +16,19 @@ Checksums-Sha256:
 Build-Origin: Devuan
 Build-Architecture: amd64
 Build-Date: Mon, 22 May 2017 18:03:35 -0400
+=======
+ 7180dfffb429c840972e622fbfacf77f 884 apt-now_0.9-1.dsc
+ 8a7310e76fbdc295cb5eaa8442fe355f 162334 apt-now_0.9-1_all.deb
+Checksums-Sha1:
+ cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
+ e022c3c6a727942e378e5cc2a56f83e12d96e09f 162334 apt-now_0.9-1_all.deb
+Checksums-Sha256:
+ e686bb641ebae7fca223fbd80e57f07976dd8a050dc58060956692c7e44b295a 884 apt-now_0.9-1.dsc
+ 7e6fd54348c04774c218ce8e0cd068a4254466c620f21cb0f84238a4e96e19b4 162334 apt-now_0.9-1_all.deb
+Build-Origin: Devuan
+Build-Architecture: amd64
+Build-Date: Sat, 20 May 2017 02:31:02 -0400
+>>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.buildinfo
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
