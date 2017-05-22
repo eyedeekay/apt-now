@@ -294,7 +294,7 @@ includepackages(){
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
                 hdpage > "$POSTPATH.html"
-                scpage-wrap "$f" >> "$POSTPATH.html"
+                scpage -pf "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.changes ; do
                 reprepro --ignore=wrongdistribution --basedir "$BASEDIR" include "$CODENAME" "$f";
