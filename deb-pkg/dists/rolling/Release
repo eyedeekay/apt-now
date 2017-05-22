@@ -1,7 +1,7 @@
 Origin: cmotc.github.io
 Label: cmotc.github.io
 Codename: rolling
-Date: Mon, 22 May 2017 22:27:56 UTC
+Date: Mon, 22 May 2017 22:31:34 UTC
 Architectures: amd64 i386 armhf
 Components: main
 MD5Sum:
@@ -14,8 +14,8 @@ MD5Sum:
  fd08cb2a2127e71067a711385c3daed1 4887 main/binary-armhf/Packages
  c31723edca2714a2b326b1fd50060cf2 2054 main/binary-armhf/Packages.gz
  a9c80da2a7546feab7c4b73c77b33894 83 main/binary-armhf/Release
- d1535fc65a17f30e10098d1a38815d6b 6000 main/source/Sources
- 1a954915bf88a1bd820f57367c3ab576 2208 main/source/Sources.gz
+ 02ddede6cdd5a338727f91ded3bc4308 5404 main/source/Sources
+ 72cca84f890fd7489d73a3361268faee 2026 main/source/Sources.gz
  de61b0be4e1dd5b66e4adf697609b49e 84 main/source/Release
 SHA1:
  196b5879ecf70e2f105350958e8f3b57421ed934 4887 main/binary-amd64/Packages
@@ -27,8 +27,8 @@ SHA1:
  196b5879ecf70e2f105350958e8f3b57421ed934 4887 main/binary-armhf/Packages
  86872ce5595362966d61f0f77d6a93726d7d897b 2054 main/binary-armhf/Packages.gz
  79a56de773c17edf264c9edc1e6d85585ca1ab28 83 main/binary-armhf/Release
- d94160e72ce67f48c74dbb83bac62fa3607e8339 6000 main/source/Sources
- e2a44c23fd440df8ff3e5046bfc78a894fd83382 2208 main/source/Sources.gz
+ 3b445c35712dd5a287499410e771d804474398d4 5404 main/source/Sources
+ 3c8c41ee55ee6ac544a214e55b37b2544469b29b 2026 main/source/Sources.gz
  3319faaae8acdbe217c17e0427b319611f6b83ec 84 main/source/Release
 SHA256:
  62d012afcff228a2b75e13bafc45eb076b0b8352d9469691b6ace66c65a92a0f 4887 main/binary-amd64/Packages
@@ -40,6 +40,6 @@ SHA256:
  62d012afcff228a2b75e13bafc45eb076b0b8352d9469691b6ace66c65a92a0f 4887 main/binary-armhf/Packages
  dacbfd912d4145cd62455c2b5b05927747e5fa2847b103cfa85537e4a53a0248 2054 main/binary-armhf/Packages.gz
  80a4c8ccf9425053c719d165f5586669b18acf2a40a670ffb61e0cea7f989e61 83 main/binary-armhf/Release
- 52a18ecf57d96534d2824ef940db2ab4f82b94de8d25eba22448e9180f4b7525 6000 main/source/Sources
- dfc8a165efd9efb258aa3ca695688f62e4213527a1a88fd28f19863c02905c7c 2208 main/source/Sources.gz
+ 289b6596a354c212ff99f9028a7b0d3ac7c331ce1de86d2df9f8101543d67dd0 5404 main/source/Sources
+ f1b857265d43cd1a3c51a9ec146c6f123d28cfd546cda85b6f1bc91166b15923 2026 main/source/Sources.gz
  9f9018ccb21f13c83c83e6f336c085876c38f63711d656f76fece1d55e8b9b59 84 main/source/Release
