@@ -4,31 +4,17 @@ Binary: apt-now
 Architecture: all source
 Version: 0.9-1
 Checksums-Md5:
-<<<<<<< HEAD:packages/apt-now_0.9-1_amd64.buildinfo
- 91d1781ece3816731a9663c44f8565ce 893 apt-now_0.9-1.dsc
+ f4401f7772959baab16192fb91a02458 893 apt-now_0.9-1.dsc
  948826d2a4deac772f548b49077b97e9 162370 apt-now_0.9-1_all.deb
 Checksums-Sha1:
- 32605be7145e00a3edcaba8fad3b2babc855ed09 893 apt-now_0.9-1.dsc
+ 797feb069c15f0b5b22adc388740b2b63b0c8279 893 apt-now_0.9-1.dsc
  55e32b92791c5da8e01ee3a4d93a967c699450b5 162370 apt-now_0.9-1_all.deb
 Checksums-Sha256:
- 93fc86fc4c08264499a703b2aba92be1097ad8e3b00d041487c1cb7d17fcc9c8 893 apt-now_0.9-1.dsc
+ 257d0e5d34bc95421c36c0bfc903ed27f789a516905f6420aeb734922f9ca778 893 apt-now_0.9-1.dsc
  d93b6db064fd8bf48f6c0fab1af379b0558c9be1448f93c8201fe2dce2ddd1e9 162370 apt-now_0.9-1_all.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Mon, 22 May 2017 18:03:35 -0400
-=======
- 7180dfffb429c840972e622fbfacf77f 884 apt-now_0.9-1.dsc
- 8a7310e76fbdc295cb5eaa8442fe355f 162334 apt-now_0.9-1_all.deb
-Checksums-Sha1:
- cd70a59aa4122640e599832cf9f84aced7ca96b5 884 apt-now_0.9-1.dsc
- e022c3c6a727942e378e5cc2a56f83e12d96e09f 162334 apt-now_0.9-1_all.deb
-Checksums-Sha256:
- e686bb641ebae7fca223fbd80e57f07976dd8a050dc58060956692c7e44b295a 884 apt-now_0.9-1.dsc
- 7e6fd54348c04774c218ce8e0cd068a4254466c620f21cb0f84238a4e96e19b4 162334 apt-now_0.9-1_all.deb
-Build-Origin: Devuan
-Build-Architecture: amd64
-Build-Date: Sat, 20 May 2017 02:31:02 -0400
->>>>>>> 4c9c5a5c7b065ab973dce17e8313a70f310de639:packages/apt-now_0.9-1_amd64.buildinfo
+Build-Date: Mon, 22 May 2017 18:21:15 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
