@@ -1,6 +1,11 @@
 deb-pkg/pool/main/a/apt-now/apt-now_0.9-1_all.deb
+<<<<<<< HEAD
 deb-pkg/pool/main/a/apt-now/apt-now_0.9-1.debian.tar.xz
 deb-pkg/pool/main/a/apt-now/apt-now_0.9.orig.tar.gz
 packages/apt-now_0.9-1_all.deb
 packages/apt-now_0.9-1.debian.tar.xz
+=======
+packages/apt-now_0.9-1.debian.tar.xz
+packages/apt-now_0.9-1_all.deb
+>>>>>>> 277edbcfe25eb708a963ea418cc92a480b538347
 packages/apt-now_0.9.orig.tar.gz
