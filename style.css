@@ -17,6 +17,10 @@ img {
         margin: auto;
 }
 
+a {
+        color: #9370DB;
+}
+
 #content {
 	max-width: 58%;
         background: #2F4F4F;
