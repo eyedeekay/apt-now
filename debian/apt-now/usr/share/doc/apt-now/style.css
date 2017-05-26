@@ -1,14 +1,14 @@
 body {
 	font-size: 62.5%;
 	font-family: sans-serif;
-	background: #696969;
+	background: #808080;
 }
 
 .clear { clear: both; }
 
 #header {
-	background: #2F4F4F;
-        color: #C71585;
+	background: #333333;
+        color: #00FF99;
 }
 
 img {
@@ -17,17 +17,22 @@ img {
         margin: auto;
 }
 
+a {
+        color: #9370DB;
+}
+
 #content {
 	max-width: 58%;
         background: #2F4F4F;
         float: right;
-        color: #C71585;
+        color: #00FF99;
 }
 
 #sidebar {
 	width: 40%;
         max-width: 40%;
 	float: left;
-        background: #708090;
-        color: #800000;
+        background: #2F4F4F;
+        color: #00FF99;
+        word-wrap: break-word;
 }
