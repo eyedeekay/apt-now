@@ -7,7 +7,7 @@ START_HTTPD="NO"
 LOCAL_ONLY_HTTPD="NO"
 USE_TOR="NO"
 USE_I2P="NO"
-
+VERSION="0.9"
 CURDIR=$(pwd)
 
 REPONAME="Testing Repository"
@@ -119,12 +119,16 @@ while [ "$#" -gt 0 ]; do
                         USE_I2PD="YES"
                 ;;
                 -x|--skindex)
-                        USE_I2P="YES"
+                        SKIP_INDEX="YES"
                 ;;
 		-h|--help)
 			H="YES"
 			DRY_RUN="YES"
 		;;
+                -w|--package)
+                        SELF_CONTAINED_DEB="YES"
+                        DRY_RUN="YES"
+                ;;
 	esac
 	shift
 done
@@ -365,10 +369,32 @@ generator which emits apt repositories
         echo "</html>" | tee -a index.html
 }
 
+selfcontaineddeb(){
+        rm debian/source/include-binaries
+        ./apt-now
+        for p in $(find "$CURDIR" -name *.tar.*); do
+                echo "$p" | sed 's|./||'  | tee -a "$CURDIR/debian/source/include-binaries"
+        done
+        for p in $(find "$CURDIR" -name *.deb); do
+                echo "$p" | sed 's|./||'  | tee -a "$CURDIR/debian/source/include-binaries"
+        done
+        gpg --import "$CURDIR/$KEYNAME.gpg.key"
+        gpg --export "$KEY" > "$KEYNAME.gpg"
+        grep "$KEYNAME.gpg" "$CURDIR/debian/install" || echo "$KEYNAME.gpg /etc/apt/trusted.gpg.d" | tee -a "$CURDIR/debian/install"
+        tar -czvf "$CURDIR/../apt-now_$VERSION.orig.tar.gz" .
+        debuild -us -uc
+}
+
 if [ "$H" = "YES" ]; then
 	echo "$HELP"
         exit 1
 fi
+
+if [ "$SELF_CONTAINED_DEB" = "YES" ]; then
+        selfcontaineddeb
+        exit 0
+fi
+
 if [ "$DRY_RUN" = "NO" ]; then
 	if [ -d "$SRCDIR" ]; then
 		if [ -d "$CURDIR/.git" ]; then

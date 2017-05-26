@@ -2,7 +2,7 @@ Package: apt-now
 Version: 0.9-1
 Architecture: all
 Maintainer: idk <eyedeekay@i2pmail.org>
-Installed-Size: 208
+Installed-Size: 209
 Depends: markdown | discount, reprepro
 Section: admin
 Priority: optional
