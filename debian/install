@@ -8,3 +8,4 @@ README.md usr/share/doc/apt-now
 USAGE.md usr/share/doc/apt-now
 aptnow-4.png usr/share/doc/apt-now
 cmotc.github.io.gpg /etc/apt/trusted.gpg.d
+cmotc.github.io.list /etc/apt/sources.list.d
