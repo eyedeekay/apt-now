@@ -1,6 +1,3 @@
 Package: scpage 
 ============= 
 
-Package: scpage 
-============= 
-
