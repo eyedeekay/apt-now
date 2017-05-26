@@ -15,20 +15,20 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- ac615dbe0a40212d1e3d049714fc3ef08b9e5116 866 scpage_1.0-1.dsc
- 9ed421612260b6ea012ed8593ef7a878f46d7ffb 44374 scpage_1.0.orig.tar.gz
+ 05c96d801a649e3b6efb98df0953e4b791d1f600 866 scpage_1.0-1.dsc
+ 5fa0cd3043006647bd6797f1ee730890e4624621 54503 scpage_1.0.orig.tar.gz
  acd99a366b5c90ba37047ec654745be1ded9d246 2648 scpage_1.0-1.debian.tar.xz
- 2c82e389cde92a2ebeb914e422ec3b79a90221f5 4852 scpage_1.0-1_all.deb
- 012886a35fec17b2b897669b8fef7cca1440492f 4976 scpage_1.0-1_amd64.buildinfo
+ b36a228b8e9532d0cd25248238585a151a603669 4890 scpage_1.0-1_all.deb
+ 0b0361a66e7a50f7c52b68f872f9723732368812 4977 scpage_1.0-1_amd64.buildinfo
 Checksums-Sha256:
- 562659c93e8ed6d27206770b3954b37a916f6e8248e17e8cfb9171f15f75f421 866 scpage_1.0-1.dsc
- cf591bd51c332fda5c763505ccccdc9649b38417a429f7e1ff68051097818228 44374 scpage_1.0.orig.tar.gz
+ d8636efb6eabeacb67b4b8e5bb6a9536907d5096a01bb12c34940002495b9550 866 scpage_1.0-1.dsc
+ 35fe0377c55bf19bb81a4e3cce2e92f4e34e76ebfa5ae23ccba4c60b1d7e3b2b 54503 scpage_1.0.orig.tar.gz
  cb55dcd5068021d73556461c52253706526ffbb93983c91953dd5496e9de933b 2648 scpage_1.0-1.debian.tar.xz
- c3881a34b30500683c5e050f0a307f7fff5cd5a81cacd10bd0e9e7d8eae944e5 4852 scpage_1.0-1_all.deb
- 27f5fa3d52ec50d2d801451ecd14d8b08b21ccc04d71f69f7de62d867800f32b 4976 scpage_1.0-1_amd64.buildinfo
+ 6c84124ed2c692f7079838cca0766a5e64b9c3870f95229f7b01514c7e930df7 4890 scpage_1.0-1_all.deb
+ 7d94ff26a66d45f44d973ec3334437eb166889ef3cab799fdc1839d6ddc9725d 4977 scpage_1.0-1_amd64.buildinfo
 Files:
- 3e3b079c0d7b7d76e08ced83358384e7 866 admin optional scpage_1.0-1.dsc
- d6da5a317ecd86279701e1cd9eb8857a 44374 admin optional scpage_1.0.orig.tar.gz
+ 0e09e123f24151087915609cb6892475 866 admin optional scpage_1.0-1.dsc
+ 36b9dfa74517cfa756686d341d3b8ae0 54503 admin optional scpage_1.0.orig.tar.gz
  d3127e84f77861e8f29c3ab69cff2e64 2648 admin optional scpage_1.0-1.debian.tar.xz
- a31e20c535b4a4b83ad7d5ebe3166a4c 4852 admin optional scpage_1.0-1_all.deb
- a9370c9659e8da1c9e9a2c3d8d9571db 4976 admin optional scpage_1.0-1_amd64.buildinfo
+ 184bd8bd8eff2fe2c996be216a8dd667 4890 admin optional scpage_1.0-1_all.deb
+ f8425a088343041555e34086bdce1845 4977 admin optional scpage_1.0-1_amd64.buildinfo

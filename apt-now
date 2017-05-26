@@ -286,21 +286,21 @@ includepackages(){
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
                 export PARENT=".."
-                hdpage > "$POSTPATH.html"
+                hdpage -p > "$POSTPATH.html"
                 pkpage-wrap "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.dsc ; do
                 reprepro --basedir "$BASEDIR" includedsc "$CODENAME" "$f";
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
-                hdpage > "$POSTPATH.html"
+                hdpage -p > "$POSTPATH.html"
                 scpage -pf "$f" >> "$POSTPATH.html"
         done
 	for f in $SRCDIR/*.changes ; do
                 reprepro --ignore=wrongdistribution --basedir "$BASEDIR" include "$CODENAME" "$f";
 		export POSTPATH=$(echo "$f" | sed "s|$SRCDIR|$INFODIR|")
                 export TITLE=$(echo "$f" | sed "s|$SRCDIR||")
-#                hdpage > "$POSTPATH.html"
+#                hdpage -p > "$POSTPATH.html"
 #                chpage-html -f "$f" >> "$POSTPATH.html"
         done
 }

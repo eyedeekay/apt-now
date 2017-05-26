@@ -2,16 +2,16 @@ Package: apt-now
 Version: 0.9-1
 Architecture: all
 Maintainer: idk <eyedeekay@i2pmail.org>
-Installed-Size: 207
+Installed-Size: 208
 Depends: markdown | discount, reprepro
 Homepage: https://cmotc.github.io/apt-now/
 Priority: optional
 Section: admin
 Filename: pool/main/a/apt-now/apt-now_0.9-1_all.deb
-Size: 162370
-SHA256: d93b6db064fd8bf48f6c0fab1af379b0558c9be1448f93c8201fe2dce2ddd1e9
-SHA1: 55e32b92791c5da8e01ee3a4d93a967c699450b5
-MD5sum: 948826d2a4deac772f548b49077b97e9
+Size: 162594
+SHA256: a57e3345930ddb6216aa6d86e392111bb40f66e19c333d9ac3932ac884f5d4b8
+SHA1: ed0a41795ff783cf31a393a9c8c01d97c02860ab
+MD5sum: f73f2bd7c9bc69b93c6c77f4c0382c93
 Description: A tool for setting up and hosting an apt repository using arbitrary
  http/s hosts to make files accessible with extra features for git-enabled
  hosting sites.
@@ -57,10 +57,10 @@ Homepage: https://cmotc.github.io/pkpage/
 Priority: optional
 Section: admin
 Filename: pool/main/p/pkpage/pkpage_1.0-1_all.deb
-Size: 16784
-SHA256: 534216153234e5f9998ba919ea353cb29b64eafbaa9795450c03db8881be8c36
-SHA1: 4221d7108ffd4396d4b280ef14dda4ea202fc2d4
-MD5sum: b4eb349cc1dc01ecd8ab0e6b70b80742
+Size: 16956
+SHA256: f8219dbdf66915337e186e7762abe04dfac046341cbdd5e540460d2fe87eb3ec
+SHA1: dd2455ca51533fd42e52a78f59e3ecb6c412916b
+MD5sum: aefd983e1e6b292b474352d6d929b351
 Description: Generates a Markdown-formatted description of a software package
  and a corresponding html page. For use with my repo generator, apt-git so that
  it can generate package description pages automatically and make the
@@ -80,10 +80,10 @@ Homepage: https://cmotc.github.io/scpage/
 Priority: optional
 Section: admin
 Filename: pool/main/s/scpage/scpage_1.0-1_all.deb
-Size: 4852
-SHA256: c3881a34b30500683c5e050f0a307f7fff5cd5a81cacd10bd0e9e7d8eae944e5
-SHA1: 2c82e389cde92a2ebeb914e422ec3b79a90221f5
-MD5sum: a31e20c535b4a4b83ad7d5ebe3166a4c
+Size: 4890
+SHA256: 6c84124ed2c692f7079838cca0766a5e64b9c3870f95229f7b01514c7e930df7
+SHA1: b36a228b8e9532d0cd25248238585a151a603669
+MD5sum: 184bd8bd8eff2fe2c996be216a8dd667
 Description: Generates a Markdown-formatted description of a software package
  and a corresponding html page. For use with my repo generator, apt-now so that
  it can generate package description pages automatically and make the

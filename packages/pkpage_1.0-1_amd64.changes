@@ -15,20 +15,20 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- 12a61063d8257a64c1db8239c76b5e9fbd99cbc2 869 pkpage_1.0-1.dsc
- c8da56638ab95d5e4805f0691f36237460ab2316 928921 pkpage_1.0.orig.tar.gz
- 28f8e465f316e75d42a687b51d4cde742a31061e 2648 pkpage_1.0-1.debian.tar.xz
- 4221d7108ffd4396d4b280ef14dda4ea202fc2d4 16784 pkpage_1.0-1_all.deb
- b0f4cc7cdf8c9bf9b085e6b8f155738839cc65e0 4979 pkpage_1.0-1_amd64.buildinfo
+ af90caa96644dfc24f347a76f2b4890c40793736 869 pkpage_1.0-1.dsc
+ 7cbd4d4a8a23af92d850e374ca522048fbdfaa51 962127 pkpage_1.0.orig.tar.gz
+ 8840e57980e91d0ffa36133c7c5be6b531c6d467 2648 pkpage_1.0-1.debian.tar.xz
+ dd2455ca51533fd42e52a78f59e3ecb6c412916b 16956 pkpage_1.0-1_all.deb
+ 4198ebd0c663c36d4cadad2dc08ac741b2f3fee7 4980 pkpage_1.0-1_amd64.buildinfo
 Checksums-Sha256:
- 2dc9a3aa18e59d06d264f7c2fe0d7b0b381093cf8542c20e63a8d7d87087b6d1 869 pkpage_1.0-1.dsc
- af1ec2d02d3e524cf6db8f63cf4a1c67265ff399a182abc1912ddd196b4e6821 928921 pkpage_1.0.orig.tar.gz
- 763d38e04bb2316ece237edd33259959837757060b0ca994f8df68b67e1d57c1 2648 pkpage_1.0-1.debian.tar.xz
- 534216153234e5f9998ba919ea353cb29b64eafbaa9795450c03db8881be8c36 16784 pkpage_1.0-1_all.deb
- 541734a1ec71aaf346f77a914c3037aa70025953f04600762ea9f85a7fea546e 4979 pkpage_1.0-1_amd64.buildinfo
+ 4bec8253ab554e0b14a78036a1eaa1930038127da0ad6445387b108bfcb38d0d 869 pkpage_1.0-1.dsc
+ da52985c83eba9f430a9dd6dea1c5b5471c90a1774eaa999e6762a88fc7be847 962127 pkpage_1.0.orig.tar.gz
+ 37599e87aa890596245e88c29e3fa98252987a8e8a241102665d5e0918fb50c3 2648 pkpage_1.0-1.debian.tar.xz
+ f8219dbdf66915337e186e7762abe04dfac046341cbdd5e540460d2fe87eb3ec 16956 pkpage_1.0-1_all.deb
+ 6ae138fd10209fee255a7c01ef429dc07ff16287001529175572ecce4db34b6a 4980 pkpage_1.0-1_amd64.buildinfo
 Files:
- 8103fdb6becd196a77578eec3839d6c1 869 admin optional pkpage_1.0-1.dsc
- 878a7417cd9786e963b7a4f5f8571198 928921 admin optional pkpage_1.0.orig.tar.gz
- a0253d761276068234897acab97f0dd3 2648 admin optional pkpage_1.0-1.debian.tar.xz
- b4eb349cc1dc01ecd8ab0e6b70b80742 16784 admin optional pkpage_1.0-1_all.deb
- 95f54981755a88f7058ab302a3063794 4979 admin optional pkpage_1.0-1_amd64.buildinfo
+ c49f858e2fc20c7751bd735cb60c656e 869 admin optional pkpage_1.0-1.dsc
+ 9ed9bc88de106e37058357730f91bfd5 962127 admin optional pkpage_1.0.orig.tar.gz
+ f45f3d26a3f443059a61fd2434d56bd4 2648 admin optional pkpage_1.0-1.debian.tar.xz
+ aefd983e1e6b292b474352d6d929b351 16956 admin optional pkpage_1.0-1_all.deb
+ 00c16354375a683bc5a8d705cc12ab87 4980 admin optional pkpage_1.0-1_amd64.buildinfo

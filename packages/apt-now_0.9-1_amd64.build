@@ -13,7 +13,8 @@ dh clean
  dpkg-source -b apt-now
 dpkg-source: info: using source format '3.0 (quilt)'
 dpkg-source: info: building apt-now using existing ./apt-now_0.9.orig.tar.gz
-dpkg-source: warning: newly created empty file 'packages/apt-now_0.9-1_all.deb.md' will not be represented in diff
+dpkg-source: warning: the series file (apt-now.orig.7viyH3/debian/patches/series) contains unsupported options ('HEAD', line 2); dpkg-source might fail when applying patches
+dpkg-source: warning: the series file (apt-now.orig.7viyH3/debian/patches/series) contains unsupported options ('277edbcfe25eb708a963ea418cc92a480b538347', line 5); dpkg-source might fail when applying patches
 dpkg-source: info: building apt-now in apt-now_0.9-1.debian.tar.xz
 dpkg-source: info: building apt-now in apt-now_0.9-1.dsc
  debian/rules build

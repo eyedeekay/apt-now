@@ -12,11 +12,11 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  apt-now deb admin optional arch=all
 Checksums-Sha1:
- 203fc7e0af743e5bb30f286bef6438c1e654fde9 4241445 apt-now_0.9.orig.tar.gz
- 2c69bfe84d65f31bc6a4622cbc52019bbdcdfb97 3563832 apt-now_0.9-1.debian.tar.xz
+ 41217c634a44f133b8733b659e5ebd768a145569 31912968 apt-now_0.9.orig.tar.gz
+ fc26e3ab2369c01c1d39d380e17a014add38dd48 8376 apt-now_0.9-1.debian.tar.xz
 Checksums-Sha256:
- 3036300a7e8e2303bbeaa546b29704c3e914289a76b8a25c79057cfaf56a15c4 4241445 apt-now_0.9.orig.tar.gz
- 6375776dfe67c1b4e858cbed4c5b5523c776079cee49495d2186a9cf9b8c5451 3563832 apt-now_0.9-1.debian.tar.xz
+ 55ce10e36eef94fafd8a3fc024281420306ee6b367b39213fca73d1eb873cea3 31912968 apt-now_0.9.orig.tar.gz
+ 20f313bae9207aea73e231be44f5fcac37b133ee5953035fc0fa038dba4e1102 8376 apt-now_0.9-1.debian.tar.xz
 Files:
- 0b8188a66f07f1e8aa8274c047e913bc 4241445 apt-now_0.9.orig.tar.gz
- 04308df3de86452c3f0f25963ec578cf 3563832 apt-now_0.9-1.debian.tar.xz
+ 12e4836bea48d9bbf82f059bbf0d6173 31912968 apt-now_0.9.orig.tar.gz
+ 63025a0f68b7043eae24b2fbe8011624 8376 apt-now_0.9-1.debian.tar.xz

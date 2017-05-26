@@ -12,11 +12,11 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  pkpage deb admin optional arch=all
 Checksums-Sha1:
- c8da56638ab95d5e4805f0691f36237460ab2316 928921 pkpage_1.0.orig.tar.gz
- 28f8e465f316e75d42a687b51d4cde742a31061e 2648 pkpage_1.0-1.debian.tar.xz
+ 7cbd4d4a8a23af92d850e374ca522048fbdfaa51 962127 pkpage_1.0.orig.tar.gz
+ 8840e57980e91d0ffa36133c7c5be6b531c6d467 2648 pkpage_1.0-1.debian.tar.xz
 Checksums-Sha256:
- af1ec2d02d3e524cf6db8f63cf4a1c67265ff399a182abc1912ddd196b4e6821 928921 pkpage_1.0.orig.tar.gz
- 763d38e04bb2316ece237edd33259959837757060b0ca994f8df68b67e1d57c1 2648 pkpage_1.0-1.debian.tar.xz
+ da52985c83eba9f430a9dd6dea1c5b5471c90a1774eaa999e6762a88fc7be847 962127 pkpage_1.0.orig.tar.gz
+ 37599e87aa890596245e88c29e3fa98252987a8e8a241102665d5e0918fb50c3 2648 pkpage_1.0-1.debian.tar.xz
 Files:
- 878a7417cd9786e963b7a4f5f8571198 928921 pkpage_1.0.orig.tar.gz
- a0253d761276068234897acab97f0dd3 2648 pkpage_1.0-1.debian.tar.xz
+ 9ed9bc88de106e37058357730f91bfd5 962127 pkpage_1.0.orig.tar.gz
+ f45f3d26a3f443059a61fd2434d56bd4 2648 pkpage_1.0-1.debian.tar.xz

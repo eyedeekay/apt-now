@@ -1,5 +1,6 @@
-#--dpkg-buildpackage-hook
+#! /usr/bin/env sh
 rm debian/source/include-binaries
+./apt-now
 for p in $(find -name *.tar.*); do
         echo $p | sed 's|./||'  | tee -a debian/source/include-binaries
 done
@@ -7,3 +8,4 @@ done
 for p in $(find -name *.deb); do
         echo $p | sed 's|./||'  | tee -a debian/source/include-binaries
 done
+debuild -us -uc
