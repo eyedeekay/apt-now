@@ -266,7 +266,6 @@ genconfoptions(){
 generaterkey(){
     if [ "$POSSIBLE_EXTANT_KEY" != "$KEYNAME.gpg.key" ]; then
         gpg --armor --output "$CURDIR/$KEYNAME.gpg.key" --export "$KEY"
-        rm "$POSSIBLE_EXTANT_KEY"
     fi
     if [ -f "$POSSIBLE_EXTANT_KEY" ]; then
         gpg --armor --output "$CURDIR/$KEYNAME.gpg.key.tmp" --export "$KEY"
@@ -329,7 +328,7 @@ generator which emits apt repositories
 ###to add this repository to your Debian-based system:
 
         echo \"deb https://$ORIGIN/deb-pkg $CODENAME main\" | \
-          sudo tee /etc/apt/source.list.d/$KEYNAME.list\n
+          sudo tee /etc/apt/sources.list.d/$KEYNAME.list\n
         wget -qO - https://$ORIGIN/$KEYNAME.gpg.key | \
           sudo apt-key add -\n
 
