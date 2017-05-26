@@ -380,6 +380,9 @@ selfcontaineddeb(){
         done
         gpg --import "$CURDIR/$KEYNAME.gpg.key"
         gpg --export "$KEY" > "$KEYNAME.gpg"
+        echo "deb https://$ORIGIN/deb-pkg $CODENAME main" | tee "$CURDIR/$KEYNAME.list"
+        echo "deb-src https://$ORIGIN/deb-pkg $CODENAME main" | tee -a "$CURDIR/$KEYNAME.list"
+        grep "$KEYNAME.list" "$CURDIR/debian/install" || echo "$KEYNAME.list /etc/apt/sources.list.d" | tee -a "$CURDIR/debian/install"
         grep "$KEYNAME.gpg" "$CURDIR/debian/install" || echo "$KEYNAME.gpg /etc/apt/trusted.gpg.d" | tee -a "$CURDIR/debian/install"
         tar -czvf "$CURDIR/../apt-now_$VERSION.orig.tar.gz" .
         debuild -us -uc

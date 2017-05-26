@@ -4,17 +4,17 @@ Binary: apt-now
 Architecture: all source
 Version: 0.9-1
 Checksums-Md5:
- fbf096f057e7b9c0115c60a6cffebc08 887 apt-now_0.9-1.dsc
- f73f2bd7c9bc69b93c6c77f4c0382c93 162594 apt-now_0.9-1_all.deb
+ a3738fc9d021f7fe69210544fb93c3e1 890 apt-now_0.9-1.dsc
+ aa12e1aaa23769628a7ad50d4716793a 164166 apt-now_0.9-1_all.deb
 Checksums-Sha1:
- 2c359b4c1b168192ff9b51f556bb7c27c1788ac4 887 apt-now_0.9-1.dsc
- ed0a41795ff783cf31a393a9c8c01d97c02860ab 162594 apt-now_0.9-1_all.deb
+ fbc82dba5d41de6df3c025fa5ae6936bdc609670 890 apt-now_0.9-1.dsc
+ 5333f36888014c65b385de66fd2a5b602171477d 164166 apt-now_0.9-1_all.deb
 Checksums-Sha256:
- 7c54a0c472ecd7ae47ce1b910ec5e2333bf244e575cc08bf3fe8ee625fbcd72f 887 apt-now_0.9-1.dsc
- a57e3345930ddb6216aa6d86e392111bb40f66e19c333d9ac3932ac884f5d4b8 162594 apt-now_0.9-1_all.deb
+ 362e400155b6652639218834221c0a4b228efbf6f86e7ac84c79057946928f60 890 apt-now_0.9-1.dsc
+ 9806fc0dc901a2582fe73e9e3be9af885af0f7ce59bd3f43d94ac6b0c3aa2c95 164166 apt-now_0.9-1_all.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Fri, 26 May 2017 00:37:10 -0400
+Build-Date: Fri, 26 May 2017 10:07:44 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
