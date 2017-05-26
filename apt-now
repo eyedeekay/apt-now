@@ -266,7 +266,6 @@ genconfoptions(){
 generaterkey(){
     if [ "$POSSIBLE_EXTANT_KEY" != "$KEYNAME.gpg.key" ]; then
         gpg --armor --output "$CURDIR/$KEYNAME.gpg.key" --export "$KEY"
-        rm "$POSSIBLE_EXTANT_KEY"
     fi
     if [ -f "$POSSIBLE_EXTANT_KEY" ]; then
         gpg --armor --output "$CURDIR/$KEYNAME.gpg.key.tmp" --export "$KEY"
