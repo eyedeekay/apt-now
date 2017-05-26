@@ -1,0 +1,66 @@
+ dpkg-buildpackage -rfakeroot -us -uc
+dpkg-buildpackage: info: source package go-uhttpd
+dpkg-buildpackage: info: source version 1.0-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by idk <lair repo key <problemsolver@openmailbox.org>>
+ dpkg-source --before-build go-uhttpd
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b go-uhttpd
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building go-uhttpd using existing ./go-uhttpd_1.0.orig.tar.gz
+dpkg-source: info: building go-uhttpd in go-uhttpd_1.0-1.debian.tar.xz
+dpkg-source: info: building go-uhttpd in go-uhttpd_1.0-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+	make -j1
+make[1]: Entering directory '/home/idk/Projects/Scratch/static-page-scripts/go-uhttpd'
+gccgo uhttpd.go -o go-uhttpd
+ln -f -s go-uhttpd httpd-now
+make[1]: Leaving directory '/home/idk/Projects/Scratch/static-page-scripts/go-uhttpd'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/home/idk/Projects/Scratch/static-page-scripts/go-uhttpd/debian/go-uhttpd AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/home/idk/Projects/Scratch/static-page-scripts/go-uhttpd'
+mkdir -p /home/idk/Projects/Scratch/static-page-scripts/go-uhttpd/debian/go-uhttpd/usr/bin
+cp go-uhttpd httpd-now /home/idk/Projects/Scratch/static-page-scripts/go-uhttpd/debian/go-uhttpd/usr/bin
+make[1]: Leaving directory '/home/idk/Projects/Scratch/static-page-scripts/go-uhttpd'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/go-uhttpd/usr/bin/go-uhttpd debian/go-uhttpd/usr/bin/httpd-now were not linked against libm.so.6 (they use none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'go-uhttpd-dbgsym' in '../go-uhttpd-dbgsym_1.0-1_amd64.deb'.
+dpkg-deb: building package 'go-uhttpd' in '../go-uhttpd_1.0-1_amd64.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../go-uhttpd_1.0-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build go-uhttpd
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian...
+Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.
+Finished running lintian.
