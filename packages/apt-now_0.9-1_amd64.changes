@@ -15,20 +15,20 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- c96fc11596c971c9f7c96e35c4de41c082a315cb 890 apt-now_0.9-1.dsc
- 8e95db5d42b2e2cd8b2ae4cfcb9eef15b9afbf72 391331413 apt-now_0.9.orig.tar.gz
- 7fd02be602059fde1668232cc09c345bf4168bec 8452 apt-now_0.9-1.debian.tar.xz
+ d4bb488e11dedf789cfad38f743ab245b71d23f4 893 apt-now_0.9-1.dsc
+ 1a691c4877c691467053e4310f89f99d3f3f7406 1183277452 apt-now_0.9.orig.tar.gz
+ 61f82b5973fc3cf0719faaec9b14575535ece05f 8512 apt-now_0.9-1.debian.tar.xz
  ed05977b958b8778c1f84a34ce4a8835643535bf 164278 apt-now_0.9-1_all.deb
- f789320a75a6602ec1f3f517c38162cfa04f2926 4991 apt-now_0.9-1_amd64.buildinfo
+ 66707673f76eba9d67a7fec170c57b4acfb1216c 4991 apt-now_0.9-1_amd64.buildinfo
 Checksums-Sha256:
- 12646660a34046aa30e8a90da2dd31fc4508e294882ce032980ee037f0ed37b9 890 apt-now_0.9-1.dsc
- c186468a24793394f6968b415141e1aa097154f292c83c2edaa5e7d8db5eb03f 391331413 apt-now_0.9.orig.tar.gz
- 7d245abc5fa5b4cda02d38835aa30dc02772905bae0455c89329fcbf1a554e7f 8452 apt-now_0.9-1.debian.tar.xz
+ de99054cb7da8cec48150d85ed3f3e02efd72ddddcbfa65a2882061bfd9c495a 893 apt-now_0.9-1.dsc
+ 6e835398a44e15ed9a96fc63afeb47f0ac5ee953a9bb2bb7a1c1363db2a409c2 1183277452 apt-now_0.9.orig.tar.gz
+ adfb1a32cdcf8ec6c8e7faeccecf438f204e40094a714227ffc59720d126d289 8512 apt-now_0.9-1.debian.tar.xz
  93a84f6e6c6ee44471e6ccefa053728b2323f13693f7fc04a02d6ca5076b3f0f 164278 apt-now_0.9-1_all.deb
- 2fd6ab19bbee95e6ff7ff61f66af649547ac00e830c8e8ab1a14bb2f496e870b 4991 apt-now_0.9-1_amd64.buildinfo
+ b9f4fdf12c6db13f30cccb3386620e1b633d7960de900cac0faae97327f885e2 4991 apt-now_0.9-1_amd64.buildinfo
 Files:
- b0a76c3344b6c8dae9e8e14b6d3517e9 890 admin optional apt-now_0.9-1.dsc
- 67dda300195d26e1fe0bb1ad224f4bf7 391331413 admin optional apt-now_0.9.orig.tar.gz
- 25f343f9cecb2ccd208233881cf3a347 8452 admin optional apt-now_0.9-1.debian.tar.xz
+ e5c4aee71a49bff0b9b99a7cab6f62b4 893 admin optional apt-now_0.9-1.dsc
+ 0ea3aa10f0df8e16d79df5615cc068cf 1183277452 admin optional apt-now_0.9.orig.tar.gz
+ 1a8d8dc103c21ec899f1a5c201b543a1 8512 admin optional apt-now_0.9-1.debian.tar.xz
  94c13922c9904c5dc9184c6da79ab322 164278 admin optional apt-now_0.9-1_all.deb
- 381311600524d734f527371b93ccd676 4991 admin optional apt-now_0.9-1_amd64.buildinfo
+ 8d03a87d37c8a1e0cdc3d5f6dbf707fa 4991 admin optional apt-now_0.9-1_amd64.buildinfo

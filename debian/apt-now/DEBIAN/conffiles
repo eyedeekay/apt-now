@@ -1,0 +1,2 @@
+/etc/apt/sources.list.d/cmotc.github.io.list
+/etc/apt/trusted.gpg.d/cmotc.github.io.gpg
