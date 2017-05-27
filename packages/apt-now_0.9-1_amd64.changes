@@ -15,20 +15,20 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- d4bb488e11dedf789cfad38f743ab245b71d23f4 893 apt-now_0.9-1.dsc
- 1a691c4877c691467053e4310f89f99d3f3f7406 1183277452 apt-now_0.9.orig.tar.gz
- 61f82b5973fc3cf0719faaec9b14575535ece05f 8512 apt-now_0.9-1.debian.tar.xz
- ed05977b958b8778c1f84a34ce4a8835643535bf 164278 apt-now_0.9-1_all.deb
- 66707673f76eba9d67a7fec170c57b4acfb1216c 4991 apt-now_0.9-1_amd64.buildinfo
+ 0bb72423257a0da1821a9d3c82d255430a6051ac 884 apt-now_0.9-1.dsc
+ eaace8484905e9d872fadc4f0ff042196fddac02 4225357 apt-now_0.9.orig.tar.gz
+ 18fca0dfdf4acbd1741bad1ab2dad1d54670797e 8504 apt-now_0.9-1.debian.tar.xz
+ 5684e5c8823fb421c5d301ee8b1e01ddbe8e13cc 164294 apt-now_0.9-1_all.deb
+ 91d5fe2ed725c235fb20902e1c13d80c3f0e27e0 4991 apt-now_0.9-1_amd64.buildinfo
 Checksums-Sha256:
- de99054cb7da8cec48150d85ed3f3e02efd72ddddcbfa65a2882061bfd9c495a 893 apt-now_0.9-1.dsc
- 6e835398a44e15ed9a96fc63afeb47f0ac5ee953a9bb2bb7a1c1363db2a409c2 1183277452 apt-now_0.9.orig.tar.gz
- adfb1a32cdcf8ec6c8e7faeccecf438f204e40094a714227ffc59720d126d289 8512 apt-now_0.9-1.debian.tar.xz
- 93a84f6e6c6ee44471e6ccefa053728b2323f13693f7fc04a02d6ca5076b3f0f 164278 apt-now_0.9-1_all.deb
- b9f4fdf12c6db13f30cccb3386620e1b633d7960de900cac0faae97327f885e2 4991 apt-now_0.9-1_amd64.buildinfo
+ acd2f291d352e983c68cb9c92fedb245c014bc89962dff115bfe358bc24c49c8 884 apt-now_0.9-1.dsc
+ 07f4961bee66509a900fd49d9d7e4cd9a05869e22b8dadcb7cd5caca5f05be5c 4225357 apt-now_0.9.orig.tar.gz
+ 70912f983b0d00e017b533dff1151521ff2a90c61ed72da26448fd2770336287 8504 apt-now_0.9-1.debian.tar.xz
+ fad6a386173f637d06db0bf2e299605cb586143d0211a0c7db71c71773900772 164294 apt-now_0.9-1_all.deb
+ b59d0dce556597f17134b214ed4b6afc0dc9e1795902d2a2b708638262e062e7 4991 apt-now_0.9-1_amd64.buildinfo
 Files:
- e5c4aee71a49bff0b9b99a7cab6f62b4 893 admin optional apt-now_0.9-1.dsc
- 0ea3aa10f0df8e16d79df5615cc068cf 1183277452 admin optional apt-now_0.9.orig.tar.gz
- 1a8d8dc103c21ec899f1a5c201b543a1 8512 admin optional apt-now_0.9-1.debian.tar.xz
- 94c13922c9904c5dc9184c6da79ab322 164278 admin optional apt-now_0.9-1_all.deb
- 8d03a87d37c8a1e0cdc3d5f6dbf707fa 4991 admin optional apt-now_0.9-1_amd64.buildinfo
+ 4b65b83a69370e5aaece0f184a1125c1 884 admin optional apt-now_0.9-1.dsc
+ d7f9089e9e5a04cadeaa08f057039040 4225357 admin optional apt-now_0.9.orig.tar.gz
+ 4f2c22f69a3020930c3d50382caa31fa 8504 admin optional apt-now_0.9-1.debian.tar.xz
+ dc54cd6c4f594ee16bd06c90769755b4 164294 admin optional apt-now_0.9-1_all.deb
+ 703e2206e3a50b3d0f58f759f08330d5 4991 admin optional apt-now_0.9-1_amd64.buildinfo

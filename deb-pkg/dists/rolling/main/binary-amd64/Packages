@@ -8,10 +8,10 @@ Homepage: https://cmotc.github.io/apt-now/
 Priority: optional
 Section: admin
 Filename: pool/main/a/apt-now/apt-now_0.9-1_all.deb
-Size: 164278
-SHA256: 93a84f6e6c6ee44471e6ccefa053728b2323f13693f7fc04a02d6ca5076b3f0f
-SHA1: ed05977b958b8778c1f84a34ce4a8835643535bf
-MD5sum: 94c13922c9904c5dc9184c6da79ab322
+Size: 164294
+SHA256: fad6a386173f637d06db0bf2e299605cb586143d0211a0c7db71c71773900772
+SHA1: 5684e5c8823fb421c5d301ee8b1e01ddbe8e13cc
+MD5sum: dc54cd6c4f594ee16bd06c90769755b4
 Description: A tool for setting up and hosting an apt repository using arbitrary
  http/s hosts to make files accessible with extra features for git-enabled
  hosting sites.
