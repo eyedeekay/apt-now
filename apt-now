@@ -370,7 +370,7 @@ generator which emits apt repositories
 }
 
 selfcontaineddeb(){
-        rm debian/source/include-binaries
+        rm -f debian/source/include-binaries
         ./apt-now
         for p in $(find "$CURDIR" -name *.tar.*); do
                 echo "$p" | sed 's|./||'  | tee -a "$CURDIR/debian/source/include-binaries"
