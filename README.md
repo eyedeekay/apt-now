@@ -243,9 +243,11 @@ In this respository, you'll find
   * [the latest apt-now](info/apt-now_20160727-1_all.deb.html)
   * [the pkpage helper](info/pkpage_20160727-1_all.deb.html)
   * [the scpage helper](info/scpage_20160727-1_all.deb.html)
+  * [the hdpage helper](info/hdpage_20160727-1_all.deb.html)
 
 ###Source Packages:
 
   * [the latest apt-now](info/apt-now_20160727-1.dsc.html)
   * [the pkpage helper](info/pkpage_20160727-1.dsc.html)
   * [the scpage helper](info/scpage_20160727-1.dsc.html)
+  * [the hdpage helper](info/hdpage_20160727-1.dsc.html)
