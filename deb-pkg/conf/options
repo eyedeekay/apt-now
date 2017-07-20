@@ -1,3 +1,3 @@
 verbose
 ask-passphrase
-basedir /home/idk/Projects/Scratch/static-page-scripts/apt-now/deb-pkg
+basedir /home/idk/Projects/distro-manifest/apt-now/deb-pkg
