@@ -339,7 +339,7 @@ generator which emits apt repositories
 ###alternatively via Tor:
 
         echo \"deb http://$TOR_INDEX/deb-pkg $CODENAME main\" | \
-          sudo tee /etc/apt/source.list.d/$TOR_INDEX.list\n
+          sudo tee /etc/apt/sources.list.d/$TOR_INDEX.list\n
         wget -qO - http://$TOR_INDEX/$KEYNAME.gpg.key | \
           sudo apt-key add -\n
 "
