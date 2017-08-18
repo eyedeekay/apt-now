@@ -29,7 +29,7 @@ repository to the remote storage service can be included in the program.
 Using Docker
 ------------
 
-        git clone https://github.com/cmotc/apt-now && docker build -t apt-now .
+        git clone https://github.com/eyedeekay/apt-now && docker build -t apt-now .
         docker run -p 45291:45291 \
                 apt-now
 
