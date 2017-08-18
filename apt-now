@@ -386,6 +386,8 @@ selfcontaineddeb(){
         grep "$KEYNAME.gpg" "$CURDIR/debian/install" || echo "$KEYNAME.gpg /etc/apt/trusted.gpg.d" | tee -a "$CURDIR/debian/install"
         tar -czvf "$CURDIR/../apt-now_$VERSION.orig.tar.gz" --exclude .git .
         debuild -us -uc
+        cp "$CURDIR/../apt-now_$VERSION."* "$CURDIR/packages"
+        ./apt-now
 }
 
 if [ "$H" = "YES" ]; then
