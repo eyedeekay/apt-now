@@ -233,7 +233,7 @@ github pages for download.
 
 to add this repository to your Debian-based system:
 
-        echo "deb https://eyedeekay.github.io/apt-now/dep-pkg rolling main" | sudo tee /etc/apt/sources.list.d/eyedeekay.github.io.list
+        echo "deb https://eyedeekay.github.io/apt-now/deb-pkg rolling main" | sudo tee /etc/apt/sources.list.d/eyedeekay.github.io.list
         wget -qO - https://eyedeekay.github.io/apt-now/eyedeekay.github.io.gpg.key | sudo apt-key add -
 
 In this respository, you'll find
