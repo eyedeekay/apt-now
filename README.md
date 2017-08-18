@@ -233,8 +233,8 @@ github pages for download.
 
 to add this repository to your Debian-based system:
 
-        echo "deb https://cmotc.github.io/apt-now/debian rolling main" | sudo tee /etc/apt/sources.list.d/cmotc.github.io.list
-        wget -qO - https://cmotc.github.io/apt-now/cmotc.github.io.gpg.key | sudo apt-key add -
+        echo "deb https://eyedeekay.github.io/apt-now/debian rolling main" | sudo tee /etc/apt/sources.list.d/cmotc.github.io.list
+        wget -qO - https://eyedeekay.github.io/apt-now/cmotc.github.io.gpg.key | sudo apt-key add -
 
 In this respository, you'll find
 

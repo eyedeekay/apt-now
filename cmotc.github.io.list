@@ -1,2 +1,2 @@
-deb https://cmotc.github.io/apt-now/deb-pkg rolling main
-deb-src https://cmotc.github.io/apt-now/deb-pkg rolling main
+deb https://eyedeekay.github.io/apt-now/deb-pkg rolling main
+deb-src https://eyedeekay.github.io/apt-now/deb-pkg rolling main

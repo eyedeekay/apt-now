@@ -30,21 +30,21 @@ system. You can do this by forking the apt-now repository and cloning it.</p>
 </code></pre>
 
 <p>BUT you&rsquo;ll still have the apt-now repository&rsquo;s public key in your copy if you
-do it this way. No biggie, though just delete cmotc.github.io.gpg.key from your
+do it this way. No biggie, though just delete eyedeekay.github.io.gpg.key from your
 copy and apt-now will automatically generate a new key for you next time you
 use it.
-apt-now also host&rsquo;s itself the site at https://cmotc.github.io/apt-now/ is a
+apt-now also host&rsquo;s itself the site at https://eyedeekay.github.io/apt-now/ is a
 live copy of the repository hosting apt-now and pkpage(A script which generates
 pages for each of the packages hosted in your apt-now instance) and so is every
 fork of that repository and the clone on your computer. So if you create a file
 like /etc/apt/sources.list.d/apt-now.list with the contents</p>
 
-<pre><code>    deb https://cmotc.github.io/apt-git/debian rolling main
+<pre><code>    deb https://eyedeekay.github.io/apt-git/debian rolling main
 </code></pre>
 
 <p>and tell your Package Manager to trust my key by running this command</p>
 
-<pre><code>    wget -qO - https://cmotc.github.io/apt-git/cmotc.github.io.gpg.key | sudo apt-key add -
+<pre><code>    wget -qO - https://eyedeekay.github.io/apt-git/cmotc.github.io.gpg.key | sudo apt-key add -
 </code></pre>
 
 <p>then you&rsquo;ll be able to run the following commands</p>
@@ -160,7 +160,7 @@ the default apt-now repository.</p>
 
 <pre><code>    #! /bin/sh
     #CURDIR=""
-    ORIGIN="cmotc.github.io"
+    ORIGIN="eyedeekay.github.io"
     REPONAME="apt-now"
     REPODESC="Repository for apt-now, a system for setting up apt
     repositories on static hosts."

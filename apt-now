@@ -326,7 +326,7 @@ $CODENAME\n
 ###Description:\n
 $TRIMMED_REPODESC\n
 "
-        INDEX_FOOTER="This repository was generated with [apt-now](https://cmotc.github.io/apt-now), a static site
+        INDEX_FOOTER="This repository was generated with [apt-now](https://eyedeekay.github.io/apt-now), a static site
 generator which emits apt repositories
 
 ###to add this repository to your Debian-based system:
