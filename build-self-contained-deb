@@ -7,5 +7,5 @@ done
 for p in $(find -name *.deb); do
         echo $p | sed 's|./||'  | tee -a debian/source/include-binaries
 done
-
+tar --exclude=.git -czf ../apt-now_0.9.orig.tar.gz .
 debuild -us -uc
