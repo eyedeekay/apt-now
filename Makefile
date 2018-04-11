@@ -44,7 +44,7 @@ run-i2pd: network
 		--hostname apt-now-i2pd \
 		--link apt-now \
 		-p :4567 \
-		-p 127.0.0.1:7069:7069 \
+		-p 127.0.0.1:7068:7068 \
 		--restart always \
 		-t eyedeekay/apt-now-i2pd
 
