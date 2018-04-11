@@ -1,6 +1,11 @@
 
 dummy:
 
+update:
+	git pull
+
+setup: update docker clean run
+
 clean: clean-apt-now clean-i2pd
 
 docker: docker-apt-now docker-i2pd
