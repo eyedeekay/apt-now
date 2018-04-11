@@ -1,0 +1,16 @@
+FROM alpine:3.7
+MAINTAINER idk <problemsolver@openmailbox.org>
+
+RUN apk update
+RUN apk add darkhttpd bash git
+
+WORKDIR /www
+
+RUN chown darkhttpd /www
+
+USER darkhttpd
+
+RUN git clone https://github.com/eyedeekay/apt-now /www
+
+CMD darkhttpd /www --port 45291 --addr 0.0.0.0
+
