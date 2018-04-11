@@ -50,7 +50,7 @@ run-i2pd: network
 		--link apt-now \
 		-p :4567 \
 		-p 127.0.0.1:7068:7068 \
-		-v $(PWD)/i2pd_dat:/var/lib/i2pd
+		-v $(PWD)/i2pd_dat:/var/lib/i2pd \
 		--restart always \
 		-t eyedeekay/apt-now-i2pd
 
